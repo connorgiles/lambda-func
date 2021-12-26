@@ -275,7 +275,7 @@
     /**
      * The URL of this Git repository, used by "rush change" to determine the base branch for your PR.
      *
-     * The "rush change" command needs to determine which files are affected by your PR diff.
+     * The "rush change" l needs to determine which files are affected by your PR diff.
      * If you merged or cherry-picked commits from the master branch into your PR branch, those commits
      * should be excluded from this diff (since they belong to some other PR).  In order to do that,
      * Rush needs to know where to find the base branch for your PR.  This information cannot be
@@ -387,6 +387,11 @@
     {
       "packageName": "@cg-lambda/core",
       "projectFolder": "packages/core",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@cg-lambda/utils",
+      "projectFolder": "packages/utils",
       "shouldPublish": true
     }
   ]
