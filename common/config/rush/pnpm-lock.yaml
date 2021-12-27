@@ -2,20 +2,22 @@ lockfileVersion: 5.3
 
 specifiers:
   '@rush-temp/core': file:./projects/core.tgz
-  '@rush-temp/utils': file:./projects/utils.tgz
+  '@rush-temp/inject': file:./projects/inject.tgz
   '@types/jest': ~27.0.3
   '@types/node': ^16
   jest: ~27.4.5
+  jest-junit: ~13.0.0
   rimraf: ~3.0.2
   ts-jest: ~27.1.2
   typescript: ~4.5.4
 
 dependencies:
   '@rush-temp/core': file:projects/core.tgz
-  '@rush-temp/utils': file:projects/utils.tgz
+  '@rush-temp/inject': file:projects/inject.tgz
   '@types/jest': 27.0.3
   '@types/node': 16.11.17
   jest: 27.4.5
+  jest-junit: 13.0.0
   rimraf: 3.0.2
   ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
   typescript: 4.5.4
@@ -2702,11 +2704,26 @@ packages:
       - utf-8-validate
     dev: false
 
-  file:projects/utils.tgz:
-    resolution: {integrity: sha512-pAh+nT7HmbsBSE4FUzAXj1rLlJ4n1FbCNjDjqikjVC5efQv1jZBBDE7xeDAgASkLEZe4JvSqcprAavC5wve0qA==, tarball: file:projects/utils.tgz}
-    name: '@rush-temp/utils'
+  file:projects/inject.tgz:
+    resolution: {integrity: sha512-fyy0K9KjibALlkbURY1P/LMPdxBcyeQyQt71LClfnB3XL/+59AxgF25qiR+jkAJ3N5S+3kJOwEqgjQj3RCSgZw==, tarball: file:projects/inject.tgz}
+    name: '@rush-temp/inject'
     version: 0.0.0
     dependencies:
+      '@types/jest': 27.0.3
       '@types/node': 16.11.17
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
       typescript: 4.5.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
     dev: false

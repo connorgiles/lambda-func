@@ -390,8 +390,8 @@
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/utils",
-      "projectFolder": "packages/utils",
+      "packageName": "@cg-lambda/inject",
+      "projectFolder": "packages/inject",
       "shouldPublish": true
     }
   ]

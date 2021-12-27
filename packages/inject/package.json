@@ -1,18 +1,26 @@
 {
-  "name": "@cg-lambda/utils",
+  "name": "@cg-lambda/inject",
   "version": "1.0.0",
   "description": "The utils of cg-lambda",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "test": "jest"
   },
   "author": "Connor Giles <connor@connorgiles.com>",
   "license": "ISC",
   "devDependencies": {
     "typescript": "~4.5.4",
-    "@types/node": "^16"
+    "@types/node": "^16",
+    "rimraf": "~3.0.2",
+    "jest": "~27.4.5",
+    "@types/jest": "~27.0.3",
+    "ts-jest": "~27.1.2",
+    "jest-junit": "~13.0.0"
   },
   "dependencies": {
     "@cg-lambda/core": "~1.0.0"
