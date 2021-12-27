@@ -410,6 +410,16 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@cg-lambda/dynamodb",
+      "projectFolder": "packages/dynamodb",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@cg-lambda/select",
+      "projectFolder": "packages/select",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@cg-lambda/zod",
       "projectFolder": "packages/zod",
       "shouldPublish": true

@@ -3,9 +3,11 @@ lockfileVersion: 5.3
 specifiers:
   '@rush-temp/body-to-json': file:./projects/body-to-json.tgz
   '@rush-temp/core': file:./projects/core.tgz
+  '@rush-temp/dynamodb': file:./projects/dynamodb.tgz
   '@rush-temp/e2e-tests': file:./projects/e2e-tests.tgz
   '@rush-temp/inject': file:./projects/inject.tgz
   '@rush-temp/record-iterator': file:./projects/record-iterator.tgz
+  '@rush-temp/select': file:./projects/select.tgz
   '@rush-temp/sqs': file:./projects/sqs.tgz
   '@rush-temp/zod': file:./projects/zod.tgz
   '@types/aws-lambda': ~8.10.88
@@ -29,9 +31,11 @@ specifiers:
 dependencies:
   '@rush-temp/body-to-json': file:projects/body-to-json.tgz
   '@rush-temp/core': file:projects/core.tgz
+  '@rush-temp/dynamodb': file:projects/dynamodb.tgz
   '@rush-temp/e2e-tests': file:projects/e2e-tests.tgz
   '@rush-temp/inject': file:projects/inject.tgz
   '@rush-temp/record-iterator': file:projects/record-iterator.tgz
+  '@rush-temp/select': file:projects/select.tgz
   '@rush-temp/sqs': file:projects/sqs.tgz
   '@rush-temp/zod': file:projects/zod.tgz
   '@types/aws-lambda': 8.10.88
@@ -3513,15 +3517,52 @@ packages:
       - utf-8-validate
     dev: false
 
-  file:projects/e2e-tests.tgz:
-    resolution: {integrity: sha512-U1QuPrbtCyYhI7HFIsUCorVXKCnpAAmuznVEkdxdPyXEhTX9ZvwdRQVV3jWXM237H670Flm9sV9S6AwHIIkMKQ==, tarball: file:projects/e2e-tests.tgz}
-    name: '@rush-temp/e2e-tests'
+  file:projects/dynamodb.tgz:
+    resolution: {integrity: sha512-DCobfLw2m+WDXjv+sVewL4ypaP1GYo+/hZwTD1dfsxftLUyZPyIdw14srm18OuTqkB5tLnkGOH+Q71sedz/Bjg==, tarball: file:projects/dynamodb.tgz}
+    name: '@rush-temp/dynamodb'
     version: 0.0.0
     dependencies:
+      '@types/aws-lambda': 8.10.88
       '@types/jest': 27.0.3
       '@types/node': 16.11.17
       '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
       '@typescript-eslint/parser': 5.8.0_eslint@8.5.0+typescript@4.5.4
+      aws-lambda: 1.0.7
+      aws-sdk: 2.1048.0
+      eslint: 8.5.0
+      eslint-config-prettier: 8.3.0_eslint@8.5.0
+      eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      prettier: 2.5.1
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
+      tslib: 2.3.1
+      typescript: 4.5.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: false
+
+  file:projects/e2e-tests.tgz:
+    resolution: {integrity: sha512-fC4mpxkoQ4grxhHCLxtjRnx5WmpzzRpGG8r0fw5jxtoqvjDQuT00avFC1c1SlMPSSW+nB65lc/LmbACTEIHBPg==, tarball: file:projects/e2e-tests.tgz}
+    name: '@rush-temp/e2e-tests'
+    version: 0.0.0
+    dependencies:
+      '@types/aws-lambda': 8.10.88
+      '@types/jest': 27.0.3
+      '@types/node': 16.11.17
+      '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
+      '@typescript-eslint/parser': 5.8.0_eslint@8.5.0+typescript@4.5.4
+      aws-lambda: 1.0.7
+      aws-sdk: 2.1048.0
       eslint: 8.5.0
       eslint-config-prettier: 8.3.0_eslint@8.5.0
       eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
@@ -3579,6 +3620,37 @@ packages:
   file:projects/record-iterator.tgz:
     resolution: {integrity: sha512-JifRu/C2D7LLVzC1gzv+y2EX4LihtMnDVxucqGmWJyKLJnAT/jDAEGE6lQSoDnhrA/rMGfLANcu/YKDYN8Jfzw==, tarball: file:projects/record-iterator.tgz}
     name: '@rush-temp/record-iterator'
+    version: 0.0.0
+    dependencies:
+      '@types/jest': 27.0.3
+      '@types/node': 16.11.17
+      '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
+      '@typescript-eslint/parser': 5.8.0_eslint@8.5.0+typescript@4.5.4
+      eslint: 8.5.0
+      eslint-config-prettier: 8.3.0_eslint@8.5.0
+      eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      prettier: 2.5.1
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
+      tslib: 2.3.1
+      typescript: 4.5.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: false
+
+  file:projects/select.tgz:
+    resolution: {integrity: sha512-6mmy8MGCHeIo2u8EEM3/LQDPTPaB4s3nmqraoPMsM1AZ19nArGnivq0LtA5m5Su/hfcEkFzOcEJZcOw1yGcwZg==, tarball: file:projects/select.tgz}
+    name: '@rush-temp/select'
     version: 0.0.0
     dependencies:
       '@types/jest': 27.0.3

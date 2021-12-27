@@ -1,13 +1,14 @@
 {
-  "name": "@cg-lambda/e2e-tests",
+  "name": "@cg-lambda/dynamodb",
   "version": "1.0.0",
+  "description": "The utils of cg-lambda",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
-    "build": "echo 'No builds - just tests'",
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
     "test": "jest",
     "lint": "eslint src/**/*.ts"
   },
@@ -27,18 +28,15 @@
     "eslint-config-prettier": "~8.3.0",
     "eslint-plugin-prettier": "~4.0.0",
     "prettier": "^2",
+    "aws-lambda": "~1.0.7",
     "@types/aws-lambda": "~8.10.88"
+  },
+  "peerDependencies": {
+    "aws-sdk": "~2"
   },
   "dependencies": {
     "@cg-lambda/core": "~1.0.0",
     "tslib": "~2.3.1",
-    "@cg-lambda/inject": "~1.0.0",
-    "@cg-lambda/body-to-json": "~1.0.0",
-    "@cg-lambda/zod": "~1.0.0",
-    "zod": "~3.11.6",
-    "@cg-lambda/select": "~1.0.0",
-    "@cg-lambda/dynamodb": "~1.0.0",
-    "aws-sdk": "~2.1048.0",
-    "aws-lambda": "~1.0.7"
+    "@cg-lambda/record-iterator": "~1.0.0"
   }
 }
