@@ -27,6 +27,12 @@
       "commandKind": "bulk",
       "summary": "Run tests suites",
       "enableParallelism": true
+    },
+    {
+      "name": "lint",
+      "commandKind": "bulk",
+      "summary": "Run lint suites",
+      "enableParallelism": true
     }
     // {
     //   /**
