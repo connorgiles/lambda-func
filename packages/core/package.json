@@ -4,6 +4,9 @@
   "description": "The core of cg-lambda",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "rimraf dist && tsc --project tsconfig.build.json",
     "test": "jest"
