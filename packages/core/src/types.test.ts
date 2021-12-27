@@ -1,4 +1,4 @@
-import { LambdaHandler, LambdaMiddleware } from './types'
+import { LambdaHandler } from './types'
 
 describe('core.types', () => {
   describe('#LambdaHandler', () => {
@@ -7,16 +7,6 @@ describe('core.types', () => {
         Promise.resolve(a + b)
 
       expect(handler).toBeDefined()
-    })
-  })
-
-  describe('#LambdaHandler', () => {
-    it('exists', () => {
-      const middleware: LambdaMiddleware<LambdaHandler<{ a: number }>, LambdaHandler<{ a: string }>> =
-        (handler) => (event, context) =>
-          handler({ a: parseInt(event.a) }, context)
-
-      expect(middleware).toBeDefined()
     })
   })
 })

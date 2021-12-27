@@ -3,6 +3,4 @@ export type LambdaHandler<TEvent = any, TContext = any, TResponse = void> = (
   context: TContext
 ) => Promise<TResponse>
 
-export type LambdaMiddleware<TInner extends LambdaHandler, TOuter extends LambdaHandler> = (
-  inner: TInner
-) => TOuter
+export type Controller<TWrapper> = TWrapper extends (arg: infer U, ...args: unknown[]) => unknown ? U : never
