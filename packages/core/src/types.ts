@@ -1,4 +1,4 @@
-export type LambdaHandler<TEvent = any, TContext = any, TResponse = void> = (
+export type LambdaHandler<TEvent = unknown, TContext = unknown, TResponse = void> = (
   event: TEvent,
   context: TContext
 ) => Promise<TResponse>
