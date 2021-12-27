@@ -23,6 +23,7 @@
     "jest-junit": "~13.0.0"
   },
   "dependencies": {
-    "@cg-lambda/core": "~1.0.0"
+    "@cg-lambda/core": "~1.0.0",
+    "tslib": "~2.3.1"
   }
 }
