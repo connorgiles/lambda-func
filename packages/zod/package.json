@@ -1,13 +1,14 @@
 {
-  "name": "@cg-lambda/e2e-tests",
+  "name": "@cg-lambda/zod",
   "version": "1.0.0",
+  "description": "The utils of cg-lambda",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
-    "build": "echo 'No builds - just tests'",
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
     "test": "jest",
     "lint": "eslint src/**/*.ts"
   },
@@ -31,9 +32,6 @@
   "dependencies": {
     "@cg-lambda/core": "~1.0.0",
     "tslib": "~2.3.1",
-    "@cg-lambda/inject": "~1.0.0",
-    "@cg-lambda/body-to-json": "~1.0.0",
-    "@cg-lambda/zod": "~1.0.0",
     "zod": "~3.11.6"
   }
 }

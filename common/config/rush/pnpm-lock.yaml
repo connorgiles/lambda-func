@@ -7,6 +7,7 @@ specifiers:
   '@rush-temp/inject': file:./projects/inject.tgz
   '@rush-temp/record-iterator': file:./projects/record-iterator.tgz
   '@rush-temp/sqs': file:./projects/sqs.tgz
+  '@rush-temp/zod': file:./projects/zod.tgz
   '@types/aws-lambda': ~8.10.88
   '@types/jest': ~27.0.3
   '@types/node': ^16
@@ -23,6 +24,7 @@ specifiers:
   ts-jest: ~27.1.2
   tslib: ~2.3.1
   typescript: ~4.5.4
+  zod: ~3.11.6
 
 dependencies:
   '@rush-temp/body-to-json': file:projects/body-to-json.tgz
@@ -31,6 +33,7 @@ dependencies:
   '@rush-temp/inject': file:projects/inject.tgz
   '@rush-temp/record-iterator': file:projects/record-iterator.tgz
   '@rush-temp/sqs': file:projects/sqs.tgz
+  '@rush-temp/zod': file:projects/zod.tgz
   '@types/aws-lambda': 8.10.88
   '@types/jest': 27.0.3
   '@types/node': 16.11.17
@@ -47,6 +50,7 @@ dependencies:
   ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
   tslib: 2.3.1
   typescript: 4.5.4
+  zod: 3.11.6
 
 packages:
 
@@ -3441,6 +3445,10 @@ packages:
       yargs-parser: 20.2.9
     dev: false
 
+  /zod/3.11.6:
+    resolution: {integrity: sha512-daZ80A81I3/9lIydI44motWe6n59kRBfNzTuS2bfzVh1nAXi667TOTWWtatxyG+fwgNUiagSj/CWZwRRbevJIg==}
+    dev: false
+
   file:projects/body-to-json.tgz:
     resolution: {integrity: sha512-+GpNVmPqkaK0yQtbXPCqv4lYmHbdzAC9iaiIB+trKWMafGD53eMSgw6K+4Ltmvzi7R7TbxdqA6lfzrY2GC2sKw==, tarball: file:projects/body-to-json.tgz}
     name: '@rush-temp/body-to-json'
@@ -3506,7 +3514,7 @@ packages:
     dev: false
 
   file:projects/e2e-tests.tgz:
-    resolution: {integrity: sha512-LFY26yOjkpXyR16lSCzCRyEdrgVyyVstYK/ob16K2QHW+7/jploOLpUCHc+BDLE9KBiSTswXZVtV9LmZ+nVlPg==, tarball: file:projects/e2e-tests.tgz}
+    resolution: {integrity: sha512-U1QuPrbtCyYhI7HFIsUCorVXKCnpAAmuznVEkdxdPyXEhTX9ZvwdRQVV3jWXM237H670Flm9sV9S6AwHIIkMKQ==, tarball: file:projects/e2e-tests.tgz}
     name: '@rush-temp/e2e-tests'
     version: 0.0.0
     dependencies:
@@ -3524,6 +3532,7 @@ packages:
       ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
       tslib: 2.3.1
       typescript: 4.5.4
+      zod: 3.11.6
     transitivePeerDependencies:
       - '@babel/core'
       - babel-jest
@@ -3619,6 +3628,38 @@ packages:
       ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
       tslib: 2.3.1
       typescript: 4.5.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: false
+
+  file:projects/zod.tgz:
+    resolution: {integrity: sha512-+FxLw0Y10OA5RHV2LzA8LSU9YWFl0aIebO60nW5WyL7B7horif6dVxRXFMTlKoT+nI7kFA2KgpYT2N9bS5eDJA==, tarball: file:projects/zod.tgz}
+    name: '@rush-temp/zod'
+    version: 0.0.0
+    dependencies:
+      '@types/jest': 27.0.3
+      '@types/node': 16.11.17
+      '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
+      '@typescript-eslint/parser': 5.8.0_eslint@8.5.0+typescript@4.5.4
+      eslint: 8.5.0
+      eslint-config-prettier: 8.3.0_eslint@8.5.0
+      eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      prettier: 2.5.1
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
+      tslib: 2.3.1
+      typescript: 4.5.4
+      zod: 3.11.6
     transitivePeerDependencies:
       - '@babel/core'
       - babel-jest
