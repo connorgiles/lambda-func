@@ -1,0 +1,37 @@
+{
+  "name": "@cg-lambda/e2e-tests",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "echo 'No builds - just tests'",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "author": "Connor Giles <connor@connorgiles.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "~4.5.4",
+    "@types/node": "^16",
+    "rimraf": "~3.0.2",
+    "jest": "~27.4.5",
+    "@types/jest": "~27.0.3",
+    "ts-jest": "~27.1.2",
+    "jest-junit": "~13.0.0",
+    "eslint": "^8",
+    "@typescript-eslint/eslint-plugin": "~5.8.0",
+    "@typescript-eslint/parser": "~5.8.0",
+    "eslint-config-prettier": "~8.3.0",
+    "eslint-plugin-prettier": "~4.0.0",
+    "prettier": "^2"
+  },
+  "dependencies": {
+    "@cg-lambda/core": "~1.0.0",
+    "tslib": "~2.3.1",
+    "@cg-lambda/inject": "~1.0.0",
+    "@cg-lambda/body-to-json": "~1.0.0"
+  }
+}

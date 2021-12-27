@@ -393,6 +393,16 @@
       "packageName": "@cg-lambda/inject",
       "projectFolder": "packages/inject",
       "shouldPublish": true
+    },
+    {
+      "packageName": "@cg-lambda/body-to-json",
+      "projectFolder": "packages/body-to-json",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@cg-lambda/e2e-tests",
+      "projectFolder": "internals/e2e",
+      "shouldPublish": false
     }
   ]
 }
