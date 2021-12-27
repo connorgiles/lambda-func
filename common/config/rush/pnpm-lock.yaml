@@ -5,6 +5,7 @@ specifiers:
   '@rush-temp/core': file:./projects/core.tgz
   '@rush-temp/e2e-tests': file:./projects/e2e-tests.tgz
   '@rush-temp/inject': file:./projects/inject.tgz
+  '@rush-temp/record-iterator': file:./projects/record-iterator.tgz
   '@types/jest': ~27.0.3
   '@types/node': ^16
   '@typescript-eslint/eslint-plugin': ~5.8.0
@@ -25,6 +26,7 @@ dependencies:
   '@rush-temp/core': file:projects/core.tgz
   '@rush-temp/e2e-tests': file:projects/e2e-tests.tgz
   '@rush-temp/inject': file:projects/inject.tgz
+  '@rush-temp/record-iterator': file:projects/record-iterator.tgz
   '@types/jest': 27.0.3
   '@types/node': 16.11.17
   '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
@@ -3382,7 +3384,7 @@ packages:
     dev: false
 
   file:projects/e2e-tests.tgz:
-    resolution: {integrity: sha512-gs7ZsHyxmvKH39x7hUsHYmx1ZVrbildjQvqBkpkw+BQUZ6/5I0BU0Nn2QzcAlRt9fpI3jGpl1bJA3WeiSgT97g==, tarball: file:projects/e2e-tests.tgz}
+    resolution: {integrity: sha512-LFY26yOjkpXyR16lSCzCRyEdrgVyyVstYK/ob16K2QHW+7/jploOLpUCHc+BDLE9KBiSTswXZVtV9LmZ+nVlPg==, tarball: file:projects/e2e-tests.tgz}
     name: '@rush-temp/e2e-tests'
     version: 0.0.0
     dependencies:
@@ -3415,6 +3417,37 @@ packages:
   file:projects/inject.tgz:
     resolution: {integrity: sha512-++8W9Lgj+VvtYJrna4Dop7m8ZJCDE32/LJTe+TC+GE//0pGqxkDAOxf5k+wCATI9NzU1BmO3RhQP9xuWjkM/PQ==, tarball: file:projects/inject.tgz}
     name: '@rush-temp/inject'
+    version: 0.0.0
+    dependencies:
+      '@types/jest': 27.0.3
+      '@types/node': 16.11.17
+      '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
+      '@typescript-eslint/parser': 5.8.0_eslint@8.5.0+typescript@4.5.4
+      eslint: 8.5.0
+      eslint-config-prettier: 8.3.0_eslint@8.5.0
+      eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      prettier: 2.5.1
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
+      tslib: 2.3.1
+      typescript: 4.5.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: false
+
+  file:projects/record-iterator.tgz:
+    resolution: {integrity: sha512-JifRu/C2D7LLVzC1gzv+y2EX4LihtMnDVxucqGmWJyKLJnAT/jDAEGE6lQSoDnhrA/rMGfLANcu/YKDYN8Jfzw==, tarball: file:projects/record-iterator.tgz}
+    name: '@rush-temp/record-iterator'
     version: 0.0.0
     dependencies:
       '@types/jest': 27.0.3

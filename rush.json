@@ -400,6 +400,11 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@cg-lambda/record-iterator",
+      "projectFolder": "packages/record-iterator",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@cg-lambda/e2e-tests",
       "projectFolder": "internals/e2e",
       "shouldPublish": false
