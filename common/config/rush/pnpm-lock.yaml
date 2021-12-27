@@ -6,10 +6,13 @@ specifiers:
   '@rush-temp/e2e-tests': file:./projects/e2e-tests.tgz
   '@rush-temp/inject': file:./projects/inject.tgz
   '@rush-temp/record-iterator': file:./projects/record-iterator.tgz
+  '@rush-temp/sqs': file:./projects/sqs.tgz
+  '@types/aws-lambda': ~8.10.88
   '@types/jest': ~27.0.3
   '@types/node': ^16
   '@typescript-eslint/eslint-plugin': ~5.8.0
   '@typescript-eslint/parser': ~5.8.0
+  aws-lambda: ~1.0.7
   eslint: ^8
   eslint-config-prettier: ~8.3.0
   eslint-plugin-prettier: ~4.0.0
@@ -27,10 +30,13 @@ dependencies:
   '@rush-temp/e2e-tests': file:projects/e2e-tests.tgz
   '@rush-temp/inject': file:projects/inject.tgz
   '@rush-temp/record-iterator': file:projects/record-iterator.tgz
+  '@rush-temp/sqs': file:projects/sqs.tgz
+  '@types/aws-lambda': 8.10.88
   '@types/jest': 27.0.3
   '@types/node': 16.11.17
   '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
   '@typescript-eslint/parser': 5.8.0_eslint@8.5.0+typescript@4.5.4
+  aws-lambda: 1.0.7
   eslint: 8.5.0
   eslint-config-prettier: 8.3.0_eslint@8.5.0
   eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
@@ -644,6 +650,10 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
+  /@types/aws-lambda/8.10.88:
+    resolution: {integrity: sha512-Gbdr5tmGMGV1bgWDEfgNnfqtS9YVKDCkyAgYPmYIeEQFTSjU+VzVoE0Gc1MyrzREdk3Iu5daUCRU9eQL5s+iYQ==}
+    dev: false
+
   /@types/babel__core/7.1.17:
     resolution: {integrity: sha512-6zzkezS9QEIL8yCBvXWxPTJPNuMeECJVxSOhxNY/jfq9LxOTHivaYTqr37n9LknWWRTIkzqH2UilS5QFvfa90A==}
     dependencies:
@@ -951,6 +961,31 @@ packages:
     resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=}
     dev: false
 
+  /aws-lambda/1.0.7:
+    resolution: {integrity: sha512-9GNFMRrEMG5y3Jvv+V4azWvc+qNWdWLTjDdhf/zgMlz8haaaLWv0xeAIWxz9PuWUBawsVxy0zZotjCdR3Xq+2w==}
+    hasBin: true
+    dependencies:
+      aws-sdk: 2.1048.0
+      commander: 3.0.2
+      js-yaml: 3.14.1
+      watchpack: 2.3.1
+    dev: false
+
+  /aws-sdk/2.1048.0:
+    resolution: {integrity: sha512-mVwWo+Udiuc/yEZ/DgJQGqOEtfiQjgUdtshx/t6ISe3+jW3TF9hUACwADwx2Sr/fuJyyJ3QD5JYLt5Cw35wQpA==}
+    engines: {node: '>= 10.0.0'}
+    dependencies:
+      buffer: 4.9.2
+      events: 1.1.1
+      ieee754: 1.1.13
+      jmespath: 0.15.0
+      querystring: 0.2.0
+      sax: 1.2.1
+      url: 0.10.3
+      uuid: 3.3.2
+      xml2js: 0.4.19
+    dev: false
+
   /babel-jest/27.4.5_@babel+core@7.16.5:
     resolution: {integrity: sha512-3uuUTjXbgtODmSv/DXO9nZfD52IyC2OYTFaXGRzL0kpykzroaquCrD5+lZNafTvZlnNqZHt5pb0M08qVBZnsnA==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -1028,6 +1063,10 @@ packages:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: false
 
+  /base64-js/1.5.1:
+    resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
+    dev: false
+
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
     dependencies:
@@ -1073,6 +1112,14 @@ packages:
 
   /buffer-from/1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
+    dev: false
+
+  /buffer/4.9.2:
+    resolution: {integrity: sha512-xq+q3SRMOxGivLhBNaUdC64hDTQwejJ+H0T/NB1XMtTVEwNTrfFF3gAxiyW0Bu/xWEGhjVKgUcMhCrUy2+uCWg==}
+    dependencies:
+      base64-js: 1.5.1
+      ieee754: 1.1.13
+      isarray: 1.0.0
     dev: false
 
   /callsites/3.1.0:
@@ -1167,6 +1214,10 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       delayed-stream: 1.0.0
+    dev: false
+
+  /commander/3.0.2:
+    resolution: {integrity: sha512-Gar0ASD4BDyKC4hl4DwHqDrmvjoxWKZigVnAbn5H1owvm4CxCPdb0HQDehwNYMJpla5+M2tPmPARzhtYuwpHow==}
     dev: false
 
   /concat-map/0.0.1:
@@ -1483,6 +1534,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /events/1.1.1:
+    resolution: {integrity: sha1-nr23Y1rQmccNzEwqH1AEKI6L2SQ=}
+    engines: {node: '>=0.4.x'}
+    dev: false
+
   /execa/5.1.1:
     resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==}
     engines: {node: '>=10'}
@@ -1650,6 +1706,10 @@ packages:
       is-glob: 4.0.3
     dev: false
 
+  /glob-to-regexp/0.4.1:
+    resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
+    dev: false
+
   /glob/7.2.0:
     resolution: {integrity: sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==}
     dependencies:
@@ -1750,6 +1810,10 @@ packages:
       safer-buffer: 2.1.2
     dev: false
 
+  /ieee754/1.1.13:
+    resolution: {integrity: sha512-4vf7I2LYV/HaWerSo3XmlMkp5eZ83i+/CDluXi/IGTs/O1sejBNhTtnxzmRZfvOUqj7lZjqHkeTvpgSFDlWZTg==}
+    dev: false
+
   /ignore/4.0.6:
     resolution: {integrity: sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==}
     engines: {node: '>= 4'}
@@ -1837,6 +1901,10 @@ packages:
 
   /is-typedarray/1.0.0:
     resolution: {integrity: sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=}
+    dev: false
+
+  /isarray/1.0.0:
+    resolution: {integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=}
     dev: false
 
   /isexe/2.0.0:
@@ -2383,6 +2451,11 @@ packages:
       - utf-8-validate
     dev: false
 
+  /jmespath/0.15.0:
+    resolution: {integrity: sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=}
+    engines: {node: '>= 0.6.0'}
+    dev: false
+
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: false
@@ -2779,9 +2852,19 @@ packages:
     resolution: {integrity: sha512-RIdOzyoavK+hA18OGGWDqUTsCLhtA7IcZ/6NCs4fFJaHBDab+pDDmDIByWFRQJq2Cd7r1OoQxBGKOaztq+hjIQ==}
     dev: false
 
+  /punycode/1.3.2:
+    resolution: {integrity: sha1-llOgNvt8HuQjQvIyXM7v6jkmxI0=}
+    dev: false
+
   /punycode/2.1.1:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
     engines: {node: '>=6'}
+    dev: false
+
+  /querystring/0.2.0:
+    resolution: {integrity: sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=}
+    engines: {node: '>=0.4.x'}
+    deprecated: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
     dev: false
 
   /queue-microtask/1.2.3:
@@ -2855,6 +2938,10 @@ packages:
 
   /safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    dev: false
+
+  /sax/1.2.1:
+    resolution: {integrity: sha1-e45lYZCyKOgaZq6nSEgNgozS03o=}
     dev: false
 
   /saxes/5.0.1:
@@ -3168,6 +3255,19 @@ packages:
       punycode: 2.1.1
     dev: false
 
+  /url/0.10.3:
+    resolution: {integrity: sha1-Ah5NnHcF8hu/N9A861h2dAJ3TGQ=}
+    dependencies:
+      punycode: 1.3.2
+      querystring: 0.2.0
+    dev: false
+
+  /uuid/3.3.2:
+    resolution: {integrity: sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==}
+    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    hasBin: true
+    dev: false
+
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
@@ -3203,6 +3303,14 @@ packages:
     resolution: {integrity: sha512-ts/8E8l5b7kY0vlWLewOkDXMmPdLcVV4GmOQLyxuSswIJsweeFZtAsMF7k1Nszz+TYBQrlYRmzOnr398y1JemQ==}
     dependencies:
       makeerror: 1.0.12
+    dev: false
+
+  /watchpack/2.3.1:
+    resolution: {integrity: sha512-x0t0JuydIo8qCNctdDrn1OzH/qDzk2+rdCOC3YzumZ42fiMqmQ7T3xQurykYMhYfHaPHTp4ZxAx2NfUo1K6QaA==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      glob-to-regexp: 0.4.1
+      graceful-fs: 4.2.8
     dev: false
 
   /webidl-conversions/5.0.0:
@@ -3290,6 +3398,18 @@ packages:
     resolution: {integrity: sha1-eLpyAgApxbyHuKgaPPzXS0ovweU=}
     dev: false
 
+  /xml2js/0.4.19:
+    resolution: {integrity: sha512-esZnJZJOiJR9wWKMyuvSE1y6Dq5LCuJanqhxslH2bxM6duahNZ+HMpCLhBQGZkbX6xRf8x1Y2eJlgt2q3qo49Q==}
+    dependencies:
+      sax: 1.2.1
+      xmlbuilder: 9.0.7
+    dev: false
+
+  /xmlbuilder/9.0.7:
+    resolution: {integrity: sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=}
+    engines: {node: '>=4.0'}
+    dev: false
+
   /xmlchars/2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
     dev: false
@@ -3353,14 +3473,16 @@ packages:
     dev: false
 
   file:projects/core.tgz:
-    resolution: {integrity: sha512-9QifMdS4RhXnm0tr8v45KrVU30B0u838ehPnCo3M03/adBWjdjUtanJ8R/U7WujpvyqCoqQ22CTbdzeouoRiRA==, tarball: file:projects/core.tgz}
+    resolution: {integrity: sha512-wJ2ZGm8T6+X8bQZXGK4VhkadYNhXEVqiia7tbR/DAI6LMm8KrlUi+PccNV7aFo9jqbHv1aSIGHqGamLnVSXy3w==, tarball: file:projects/core.tgz}
     name: '@rush-temp/core'
     version: 0.0.0
     dependencies:
+      '@types/aws-lambda': 8.10.88
       '@types/jest': 27.0.3
       '@types/node': 16.11.17
       '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
       '@typescript-eslint/parser': 5.8.0_eslint@8.5.0+typescript@4.5.4
+      aws-lambda: 1.0.7
       eslint: 8.5.0
       eslint-config-prettier: 8.3.0_eslint@8.5.0
       eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
@@ -3454,6 +3576,39 @@ packages:
       '@types/node': 16.11.17
       '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
       '@typescript-eslint/parser': 5.8.0_eslint@8.5.0+typescript@4.5.4
+      eslint: 8.5.0
+      eslint-config-prettier: 8.3.0_eslint@8.5.0
+      eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      prettier: 2.5.1
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
+      tslib: 2.3.1
+      typescript: 4.5.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: false
+
+  file:projects/sqs.tgz:
+    resolution: {integrity: sha512-Fb3GqV//XOb4Yg6C4G0RL3gmGf8qR46SMPihBu8df639EZymD4Mqbce2709l9HhSKN3Irq9TI1cegQmSwU5HJQ==, tarball: file:projects/sqs.tgz}
+    name: '@rush-temp/sqs'
+    version: 0.0.0
+    dependencies:
+      '@types/aws-lambda': 8.10.88
+      '@types/jest': 27.0.3
+      '@types/node': 16.11.17
+      '@typescript-eslint/eslint-plugin': 5.8.0_836011a006f4f5d67178564baf2b6d34
+      '@typescript-eslint/parser': 5.8.0_eslint@8.5.0+typescript@4.5.4
+      aws-lambda: 1.0.7
       eslint: 8.5.0
       eslint-config-prettier: 8.3.0_eslint@8.5.0
       eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae

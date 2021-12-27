@@ -5,7 +5,7 @@ describe('recordIterator', () => {
     const event = { Records: [1, 1, 1] }
     let count = 0
 
-    await recordIterator<number>()(async (event) => {
+    await recordIterator<{ Records: number[] }>()(async (event) => {
       expect(event).toBe(1)
 
       count += event

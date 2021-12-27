@@ -405,6 +405,11 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@cg-lambda/sqs",
+      "projectFolder": "packages/sqs",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@cg-lambda/e2e-tests",
       "projectFolder": "internals/e2e",
       "shouldPublish": false

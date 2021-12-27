@@ -9,5 +9,3 @@
 node common/scripts/install-run-rush.js prettier
 node common/scripts/install-run-rush.js lint
 node common/scripts/install-run-rush.js test
-
-exit 0
