@@ -2,6 +2,18 @@
   "name": "@lambda-func/body-to-json",
   "entries": [
     {
+      "version": "0.1.1",
+      "tag": "@lambda-func/body-to-json_v0.1.1",
+      "date": "Wed, 29 Dec 2021 21:08:13 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Allow body to be nullish"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.0",
       "tag": "@lambda-func/body-to-json_v0.1.0",
       "date": "Wed, 29 Dec 2021 18:50:20 GMT",
