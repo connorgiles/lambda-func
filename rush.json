@@ -93,6 +93,11 @@
       "packageName": "@lambda-func/api-gateway",
       "projectFolder": "packages/api-gateway",
       "shouldPublish": true
+    },
+    {
+      "packageName": "@lambda-func/sns",
+      "projectFolder": "packages/sns",
+      "shouldPublish": true
     }
   ]
 }
