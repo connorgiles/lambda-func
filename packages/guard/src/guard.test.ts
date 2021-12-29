@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { UnprocessableEntity } from '@lambda-func/errors'
+
 import { guard } from './guard'
 
 describe('guard', () => {
@@ -22,7 +24,8 @@ describe('guard', () => {
         /* do nothing */
       })(testEvent, {})
     } catch (error) {
-      expect(error).toBeInstanceOf(Error)
+      expect(error).toBeInstanceOf(UnprocessableEntity)
+      expect((<UnprocessableEntity>error).statusCode).toBe(422)
     }
 
     expect.hasAssertions()

@@ -1,7 +1,8 @@
 import { LambdaHandler } from '@lambda-func/core'
+import { UnprocessableEntity } from '@lambda-func/errors'
 
 const defaultOnFailedPredicate = () => {
-  throw new Error('Event did not meet type predicate')
+  throw new UnprocessableEntity('Event did not meet type predicate')
 }
 
 export const guard =
