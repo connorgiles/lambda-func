@@ -1,5 +1,14 @@
-import { sum } from './util'
+import { select } from './util'
 
-describe('sum', () => {
-  it('adds', () => expect(sum(1, 2)).toBe(3))
+describe('util', () => {
+  it('select works', async () => {
+    const testEvent = { test: { nested: 'test' } } as const
+    const selectNested = (input: typeof testEvent) => input.test.nested
+
+    await select(selectNested)(async (event) => {
+      expect(event).toBe(testEvent.test.nested)
+    })(testEvent, {})
+
+    expect.hasAssertions()
+  })
 })
