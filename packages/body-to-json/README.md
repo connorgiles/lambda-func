@@ -1,5 +1,11 @@
 # `@lambda-func/body-to-json`
 
+![https://img.shields.io/npm/v/@lambda-func/body-to-json](https://img.shields.io/npm/v/@lambda-func/body-to-json)
+
+```shell
+npm i @lambda-func/body-to-json
+```
+
 This package includes a `lambda-func` middleware to parse the JSON in the `body` of an incoming event.
 
 ## Usage

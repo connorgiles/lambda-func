@@ -1,5 +1,11 @@
 # `@lambda-func/dynamodb`
 
+![https://img.shields.io/npm/v/@lambda-func/dynamodb](https://img.shields.io/npm/v/@lambda-func/dynamodb)
+
+```shell
+npm i @lambda-func/dynamodb
+```
+
 This package contains a set of utilities for when working with DynamoDB stream handlers.
 
 ## Usage

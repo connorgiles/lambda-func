@@ -1,5 +1,11 @@
 # `@lambda-func/s3`
 
+![https://img.shields.io/npm/v/@lambda-func/s3](https://img.shields.io/npm/v/@lambda-func/s3)
+
+```shell
+npm i @lambda-func/s3
+```
+
 This package contains a set of utilities for when working with S3 event handlers.
 
 ## Usage

@@ -1,5 +1,11 @@
 # `@lambda-func/guard`
 
+![https://img.shields.io/npm/v/@lambda-func/guard](https://img.shields.io/npm/v/@lambda-func/guard)
+
+```shell
+npm i @lambda-func/guard
+```
+
 This package contains a middleware to use type guards for type narrowing.
 
 ## Usage

@@ -1,5 +1,11 @@
 # `@lambda-func/zod`
 
+![https://img.shields.io/npm/v/@lambda-func/zod](https://img.shields.io/npm/v/@lambda-func/zod)
+
+```shell
+npm i @lambda-func/zod
+```
+
 This package contains a middleware to use [zod](https://github.com/colinhacks/zod) for type parsing.
 
 ## Usage

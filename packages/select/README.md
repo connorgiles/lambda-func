@@ -1,5 +1,11 @@
 # `@lambda-func/select`
 
+![https://img.shields.io/npm/v/@lambda-func/select](https://img.shields.io/npm/v/@lambda-func/select)
+
+```shell
+npm i @lambda-func/select
+```
+
 This package provides a middleware to provide a selector for the incoming event.
 
 ## Usage

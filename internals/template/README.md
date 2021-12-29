@@ -1,5 +1,11 @@
 # `@lambda-func/handler`
 
+![https://img.shields.io/npm/v/@lambda-func/handler](https://img.shields.io/npm/v/@lambda-func/handler)
+
+```shell
+npm i @lambda-func/handler
+```
+
 This package contains a higher order function.
 
 ## Usage
