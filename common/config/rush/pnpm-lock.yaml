@@ -13,10 +13,10 @@ specifiers:
   '@rush-temp/s3': file:./projects/s3.tgz
   '@rush-temp/scripts': file:./projects/scripts.tgz
   '@rush-temp/select': file:./projects/select.tgz
+  '@rush-temp/sns': file:./projects/sns.tgz
   '@rush-temp/sqs': file:./projects/sqs.tgz
   '@rush-temp/template': file:./projects/template.tgz
   '@rush-temp/zod': file:./projects/zod.tgz
-  '@types/aws-lambda': ~8.10.88
   '@types/jest': ~27.0.3
   '@types/yargs': ~17.0.8
   '@typescript-eslint/eslint-plugin': ~5.8.0
@@ -48,10 +48,10 @@ dependencies:
   '@rush-temp/s3': file:projects/s3.tgz
   '@rush-temp/scripts': file:projects/scripts.tgz
   '@rush-temp/select': file:projects/select.tgz
+  '@rush-temp/sns': file:projects/sns.tgz
   '@rush-temp/sqs': file:projects/sqs.tgz
   '@rush-temp/template': file:projects/template.tgz
   '@rush-temp/zod': file:projects/zod.tgz
-  '@types/aws-lambda': 8.10.89
   '@types/jest': 27.0.3
   '@types/yargs': 17.0.8
   '@typescript-eslint/eslint-plugin': 5.8.1_3a47348159e115370aa4cba56aba33b6
@@ -3500,7 +3500,7 @@ packages:
     dev: false
 
   file:projects/api-gateway.tgz:
-    resolution: {integrity: sha512-5RqqJ/kYWH3emBDwu9yXLS2sIMt2BRPN/o/n/E0L7s+2CBjRxPjjhAvbYiIoF98NZPE/jlF7XgHr+0Qj/lljGw==, tarball: file:projects/api-gateway.tgz}
+    resolution: {integrity: sha512-gbz/IEIjr6sJ3S6seJzE1FQXJzhgBcpNrcRIyWlU9vRsa3uaQ03VIKR/Jx2AUett6ZfrZ9vp9gA+mRiHWWSpsQ==, tarball: file:projects/api-gateway.tgz}
     name: '@rush-temp/api-gateway'
     version: 0.0.0
     dependencies:
@@ -3865,8 +3865,41 @@ packages:
       - utf-8-validate
     dev: false
 
+  file:projects/sns.tgz:
+    resolution: {integrity: sha512-ZNHuk/TC2pdMIz3rcPZLmV/eT96ILaxOkFZRznMhOq0i4d0mz39I0NXeCwSa0S5pISQLWvEfXHMB5QxPU9b8vg==, tarball: file:projects/sns.tgz}
+    name: '@rush-temp/sns'
+    version: 0.0.0
+    dependencies:
+      '@types/aws-lambda': 8.10.89
+      '@types/jest': 27.0.3
+      '@types/node': 16.11.17
+      '@typescript-eslint/eslint-plugin': 5.8.1_3a47348159e115370aa4cba56aba33b6
+      '@typescript-eslint/parser': 5.8.1_eslint@8.5.0+typescript@4.5.4
+      aws-lambda: 1.0.7
+      eslint: 8.5.0
+      eslint-config-prettier: 8.3.0_eslint@8.5.0
+      eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      prettier: 2.5.1
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
+      tslib: 2.3.1
+      typescript: 4.5.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: false
+
   file:projects/sqs.tgz:
-    resolution: {integrity: sha512-ZQhdX2skeQ+XgcokCeKBwwu6Lpi1flODU9w+zNQ4H9DmZoKseo9Klvxfg9WD4ljAC+gHhbYZzT2k3CInYxKWDA==, tarball: file:projects/sqs.tgz}
+    resolution: {integrity: sha512-KieWXXL5E5X+P+64PLIhEQJsDUwNeZ/8jP4dPx0sVd/xbWytDfTaJpYGM3PNqJk8R75H9WkMWWlmgiUJVB8IdQ==, tarball: file:projects/sqs.tgz}
     name: '@rush-temp/sqs'
     version: 0.0.0
     dependencies:

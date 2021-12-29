@@ -1,5 +1,6 @@
 import { LambdaHandler } from '@lambda-func/core'
 import { SNSEventRecord } from 'aws-lambda'
+
 import { ParsedSNSRecord } from './types'
 
 export const parseSNSMessage =

@@ -24,6 +24,16 @@ describe('example', () => {
       }
     }
 
+    const testEvent = <DynamoDBStreamEvent>{
+      Records: [
+        {
+          dynamodb: {
+            NewImage: DynamoDB.Converter.marshall(body)
+          }
+        }
+      ]
+    }
+
     const wrapper = compose(
       dynamodb(),
       select((event) => event.dynamodb.NewImage),
@@ -34,18 +44,7 @@ describe('example', () => {
       expect(event).toStrictEqual(body)
     }
 
-    await wrapper(controller)(
-      <DynamoDBStreamEvent>{
-        Records: [
-          {
-            dynamodb: {
-              NewImage: DynamoDB.Converter.marshall(body)
-            }
-          }
-        ]
-      },
-      createContext()
-    )
+    await wrapper(controller)(testEvent, createContext())
 
     expect.hasAssertions()
   })
