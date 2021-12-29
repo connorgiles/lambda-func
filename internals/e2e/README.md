@@ -1,6 +1,6 @@
 # End to End Tests
 
-This project contains a suite of E2E tests for `cg-lambda` utilities.
+This project contains a suite of E2E tests for `lambda-func` utilities.
 
 ## Usage
 

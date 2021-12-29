@@ -1,7 +1,7 @@
 {
-  "name": "@cg-lambda/core",
+  "name": "@lambda-func/core",
   "version": "1.0.0",
-  "description": "The core of cg-lambda",
+  "description": "The core of lambda-func",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

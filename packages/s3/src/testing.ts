@@ -1,5 +1,5 @@
 import { S3EventRecord, S3Event } from 'aws-lambda'
-import { DeepPartial } from '@cg-lambda/core'
+import { DeepPartial } from '@lambda-func/core'
 
 export const createS3Record = (partial?: DeepPartial<S3EventRecord>): S3EventRecord => ({
   awsRegion: '',

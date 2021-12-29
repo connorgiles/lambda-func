@@ -1,4 +1,4 @@
-import { LambdaHandler } from '@cg-lambda/core'
+import { LambdaHandler } from '@lambda-func/core'
 import { z } from 'zod'
 
 export const zodParser =

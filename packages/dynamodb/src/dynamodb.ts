@@ -1,6 +1,6 @@
 import { DynamoDBStreamEvent, Context } from 'aws-lambda'
-import { compose } from '@cg-lambda/core'
-import { recordIterator } from '@cg-lambda/record-iterator'
+import { compose } from '@lambda-func/core'
+import { recordIterator } from '@lambda-func/record-iterator'
 import { unmarshallDynamoDBRecord } from './unmarshall'
 
 export const dynamodb = () =>

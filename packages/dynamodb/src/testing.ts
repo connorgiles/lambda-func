@@ -1,5 +1,5 @@
 import { DynamoDBRecord, StreamRecord, DynamoDBStreamEvent } from 'aws-lambda'
-import { DeepPartial } from '@cg-lambda/core'
+import { DeepPartial } from '@lambda-func/core'
 
 export type PartialDynamoDBRecord = DeepPartial<DynamoDBRecord> & {
   dynamodb?: Pick<StreamRecord, 'Keys' | 'NewImage' | 'OldImage'>

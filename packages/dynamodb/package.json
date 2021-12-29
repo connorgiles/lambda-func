@@ -1,7 +1,7 @@
 {
-  "name": "@cg-lambda/dynamodb",
+  "name": "@lambda-func/dynamodb",
   "version": "1.0.0",
-  "description": "The utils of cg-lambda",
+  "description": "The utils of lambda-func",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -35,8 +35,8 @@
     "aws-sdk": "~2"
   },
   "dependencies": {
-    "@cg-lambda/core": "~1.0.0",
+    "@lambda-func/core": "~1.0.0",
     "tslib": "~2.3.1",
-    "@cg-lambda/record-iterator": "~1.0.0"
+    "@lambda-func/record-iterator": "~1.0.0"
   }
 }

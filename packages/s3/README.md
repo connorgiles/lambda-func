@@ -5,7 +5,7 @@ This package contains an higher order function based middleware to provie depend
 ## Usage
 
 ```typescript
-import { inject } from '@cg-lambda/inject'
+import { inject } from '@lambda-func/inject'
 import { db } from '../db'
 
 export const handler = inject(

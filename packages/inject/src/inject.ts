@@ -1,4 +1,4 @@
-import { LambdaHandler } from '@cg-lambda/core'
+import { LambdaHandler } from '@lambda-func/core'
 
 export const inject =
   <TKey extends string, TInject, TEvent, TContext, TResponse>(key: TKey, injection: TInject) =>

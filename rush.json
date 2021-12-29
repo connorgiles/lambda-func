@@ -8,7 +8,7 @@
   "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0 || >=16.10.0 <17.0.0",
   "gitPolicy": {},
   "repository": {
-    "url": "https://github.com/connorgiles/cg-lambda",
+    "url": "https://github.com/connorgiles/lambda-func",
     "defaultBranch": "main"
   },
   "eventHooks": {
@@ -20,67 +20,67 @@
   "variants": [],
   "projects": [
     {
-      "packageName": "@cg-lambda/core",
+      "packageName": "@lambda-func/core",
       "projectFolder": "packages/core",
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/inject",
+      "packageName": "@lambda-func/inject",
       "projectFolder": "packages/inject",
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/body-to-json",
+      "packageName": "@lambda-func/body-to-json",
       "projectFolder": "packages/body-to-json",
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/record-iterator",
+      "packageName": "@lambda-func/record-iterator",
       "projectFolder": "packages/record-iterator",
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/sqs",
+      "packageName": "@lambda-func/sqs",
       "projectFolder": "packages/sqs",
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/dynamodb",
+      "packageName": "@lambda-func/dynamodb",
       "projectFolder": "packages/dynamodb",
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/s3",
+      "packageName": "@lambda-func/s3",
       "projectFolder": "packages/s3",
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/select",
+      "packageName": "@lambda-func/select",
       "projectFolder": "packages/select",
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/zod",
+      "packageName": "@lambda-func/zod",
       "projectFolder": "packages/zod",
       "shouldPublish": true
     },
     {
-      "packageName": "@cg-lambda/e2e-tests",
+      "packageName": "@lambda-func/e2e-tests",
       "projectFolder": "internals/e2e",
       "shouldPublish": false
     },
     {
-      "packageName": "@cg-lambda/template",
+      "packageName": "@lambda-func/template",
       "projectFolder": "internals/template",
       "shouldPublish": false
     },
     {
-      "packageName": "@cg-lambda/scripts",
+      "packageName": "@lambda-func/scripts",
       "projectFolder": "internals/scripts",
       "shouldPublish": false
     },
     {
-      "packageName": "@cg-lambda/guard",
+      "packageName": "@lambda-func/guard",
       "projectFolder": "packages/guard",
       "shouldPublish": true
     }

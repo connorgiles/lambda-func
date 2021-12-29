@@ -2,7 +2,7 @@ import yargs from 'yargs'
 
 import { copyRecursiveSync, editJsonFile, rushUpdate } from './utils'
 
-const DEFAULT_NAMESPACE = '@cg-lambda'
+const DEFAULT_NAMESPACE = '@lambda-func'
 const PACKAGE_DIRECTORY = 'packages'
 const TEMPLATE_DIRECTORY = 'internals/template'
 

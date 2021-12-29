@@ -1,4 +1,4 @@
-import { LambdaHandler } from '@cg-lambda/core'
+import { LambdaHandler } from '@lambda-func/core'
 
 export const bodyToJson =
   <TEvent extends { body: string } = { body: string }, TContext = unknown, TResponse = unknown>() =>

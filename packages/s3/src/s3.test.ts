@@ -1,4 +1,4 @@
-import { createContext } from '@cg-lambda/core'
+import { createContext } from '@lambda-func/core'
 import { s3 } from './s3'
 import { createS3Event } from './testing'
 

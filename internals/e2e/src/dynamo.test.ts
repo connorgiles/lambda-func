@@ -1,9 +1,9 @@
 import { DynamoDB } from 'aws-sdk'
 import { DynamoDBStreamEvent } from 'aws-lambda'
-import { compose, Controller, createContext } from '@cg-lambda/core'
-import { dynamodb } from '@cg-lambda/dynamodb'
-import { select } from '@cg-lambda/select'
-import { zodParser } from '@cg-lambda/zod'
+import { compose, Controller, createContext } from '@lambda-func/core'
+import { dynamodb } from '@lambda-func/dynamodb'
+import { select } from '@lambda-func/select'
+import { zodParser } from '@lambda-func/zod'
 import { z } from 'zod'
 
 describe('example', () => {

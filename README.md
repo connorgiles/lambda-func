@@ -6,11 +6,11 @@ This monorepo contains the a set of higher order functions and utilities to crea
 
 ```typescript
 import { z } from 'zod'
-import { compose, Controller } from '@cg-lambda/core'
-import { sqs } from '@cg-lambda/sqs'
-import { inject } from '@cg-lambda/inject'
-import { select } from '@cg-lambda/select'
-import { zodParser } from '@cg-lambda/zod'
+import { compose, Controller } from '@lambda-func/core'
+import { sqs } from '@lambda-func/sqs'
+import { inject } from '@lambda-func/inject'
+import { select } from '@lambda-func/select'
+import { zodParser } from '@lambda-func/zod'
 
 import { Database, Logger } from '../services'
 

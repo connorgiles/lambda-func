@@ -1,5 +1,5 @@
 {
-  "name": "@cg-lambda/scripts",
+  "name": "@lambda-func/scripts",
   "version": "1.0.0",
   "private": true,
   "scripts": {

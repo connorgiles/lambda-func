@@ -1,4 +1,4 @@
-import { LambdaHandler } from '@cg-lambda/core'
+import { LambdaHandler } from '@lambda-func/core'
 import { DynamoDB } from 'aws-sdk'
 import { DynamoDBRecord } from 'aws-lambda'
 import { UnmarshalledDynamoDBRecord } from './types'

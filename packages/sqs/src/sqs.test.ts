@@ -1,4 +1,4 @@
-import { createContext } from '@cg-lambda/core'
+import { createContext } from '@lambda-func/core'
 import { sqs } from './sqs'
 import { createSQSEvent } from './testing'
 

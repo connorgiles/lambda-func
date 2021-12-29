@@ -1,4 +1,4 @@
-import { LambdaHandler } from '@cg-lambda/core'
+import { LambdaHandler } from '@lambda-func/core'
 
 export const select =
   <TEvent, TSelected = unknown, TContext = unknown, TResponse = unknown>(

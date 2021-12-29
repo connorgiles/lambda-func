@@ -1,4 +1,4 @@
-import { LambdaHandler } from '@cg-lambda/core'
+import { LambdaHandler } from '@lambda-func/core'
 
 const defaultOnFailedPredicate = () => {
   throw new Error('Event did not meet type predicate')

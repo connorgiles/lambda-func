@@ -1,5 +1,5 @@
 import { SQSRecord, SQSEvent } from 'aws-lambda'
-import { DeepPartial } from '@cg-lambda/core'
+import { DeepPartial } from '@lambda-func/core'
 
 import { ParsedSQSRecord, ParsedSQSEvent } from './types'
 

@@ -1,7 +1,7 @@
-import { compose, Controller } from '@cg-lambda/core'
-import { inject } from '@cg-lambda/inject'
-import { bodyToJson } from '@cg-lambda/body-to-json'
-import { zodParser } from '@cg-lambda/zod'
+import { compose, Controller } from '@lambda-func/core'
+import { inject } from '@lambda-func/inject'
+import { bodyToJson } from '@lambda-func/body-to-json'
+import { zodParser } from '@lambda-func/zod'
 import { z } from 'zod'
 
 describe('example', () => {
