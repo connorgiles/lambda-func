@@ -1,0 +1,45 @@
+{
+  "name": "@lambda-func/api-gateway",
+  "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/connorgiles/lambda-func",
+    "type": "git"
+  },
+  "description": "The utils of lambda-func",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "authors": [
+    "Connor Giles <connor@connorgiles.com>"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "~4.5.4",
+    "@types/node": "^16",
+    "rimraf": "~3.0.2",
+    "jest": "~27.4.5",
+    "@types/jest": "~27.0.3",
+    "ts-jest": "~27.1.2",
+    "jest-junit": "~13.0.0",
+    "eslint": "^8",
+    "@typescript-eslint/eslint-plugin": "~5.8.0",
+    "@typescript-eslint/parser": "~5.8.0",
+    "eslint-config-prettier": "~8.3.0",
+    "eslint-plugin-prettier": "~4.0.0",
+    "prettier": "^2",
+    "aws-lambda": "~1.0.7",
+    "@types/aws-lambda": "~8.10.89"
+  },
+  "dependencies": {
+    "@lambda-func/core": "~0.0.0",
+    "tslib": "~2.3.1",
+    "@lambda-func/errors": "~0.0.0"
+  }
+}

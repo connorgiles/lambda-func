@@ -88,6 +88,11 @@
       "packageName": "@lambda-func/errors",
       "projectFolder": "packages/errors",
       "shouldPublish": true
+    },
+    {
+      "packageName": "@lambda-func/api-gateway",
+      "projectFolder": "packages/api-gateway",
+      "shouldPublish": true
     }
   ]
 }
