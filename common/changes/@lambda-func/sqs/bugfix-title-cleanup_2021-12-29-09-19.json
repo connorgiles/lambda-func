@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@lambda-func/sqs",
+      "comment": "Fix typo in readme",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@lambda-func/sqs"
+}
