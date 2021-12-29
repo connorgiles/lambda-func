@@ -1,6 +1,6 @@
 # `@lambda-func/body-to-json`
 
-![https://img.shields.io/npm/v/@lambda-func/body-to-json](https://img.shields.io/npm/v/@lambda-func/body-to-json)
+[![https://img.shields.io/npm/v/@lambda-func/body-to-json](https://img.shields.io/npm/v/@lambda-func/body-to-json)](https://www.npmjs.com/package/@lambda-func/body-to-json)
 
 ```shell
 npm i @lambda-func/body-to-json

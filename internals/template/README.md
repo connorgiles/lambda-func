@@ -1,6 +1,6 @@
 # `@lambda-func/handler`
 
-![https://img.shields.io/npm/v/@lambda-func/handler](https://img.shields.io/npm/v/@lambda-func/handler)
+[![https://img.shields.io/npm/v/@lambda-func/handler](https://img.shields.io/npm/v/@lambda-func/handler)](https://www.npmjs.com/package/@lambda-func/handler)
 
 ```shell
 npm i @lambda-func/handler

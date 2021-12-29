@@ -1,6 +1,6 @@
 # `@lambda-func/guard`
 
-![https://img.shields.io/npm/v/@lambda-func/guard](https://img.shields.io/npm/v/@lambda-func/guard)
+[![https://img.shields.io/npm/v/@lambda-func/guard](https://img.shields.io/npm/v/@lambda-func/guard)](https://www.npmjs.com/package/@lambda-func/guard)
 
 ```shell
 npm i @lambda-func/guard

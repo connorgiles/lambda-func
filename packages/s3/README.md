@@ -1,6 +1,6 @@
 # `@lambda-func/s3`
 
-![https://img.shields.io/npm/v/@lambda-func/s3](https://img.shields.io/npm/v/@lambda-func/s3)
+[![https://img.shields.io/npm/v/@lambda-func/s3](https://img.shields.io/npm/v/@lambda-func/s3)](https://www.npmjs.com/package/@lambda-func/s3)
 
 ```shell
 npm i @lambda-func/s3

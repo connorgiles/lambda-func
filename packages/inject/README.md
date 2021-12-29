@@ -1,6 +1,6 @@
 # `@lambda-func/inject`
 
-![https://img.shields.io/npm/v/@lambda-func/inject](https://img.shields.io/npm/v/@lambda-func/inject)
+[![https://img.shields.io/npm/v/@lambda-func/inject](https://img.shields.io/npm/v/@lambda-func/inject)](https://www.npmjs.com/package/@lambda-func/inject)
 
 ```shell
 npm i @lambda-func/inject

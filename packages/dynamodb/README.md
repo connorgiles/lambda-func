@@ -1,6 +1,6 @@
 # `@lambda-func/dynamodb`
 
-![https://img.shields.io/npm/v/@lambda-func/dynamodb](https://img.shields.io/npm/v/@lambda-func/dynamodb)
+[![https://img.shields.io/npm/v/@lambda-func/dynamodb](https://img.shields.io/npm/v/@lambda-func/dynamodb)](https://www.npmjs.com/package/@lambda-func/dynamodb)
 
 ```shell
 npm i @lambda-func/dynamodb

@@ -1,6 +1,6 @@
 # `@lambda-func/zod`
 
-![https://img.shields.io/npm/v/@lambda-func/zod](https://img.shields.io/npm/v/@lambda-func/zod)
+[![https://img.shields.io/npm/v/@lambda-func/zod](https://img.shields.io/npm/v/@lambda-func/zod)](https://www.npmjs.com/package/@lambda-func/zod)
 
 ```shell
 npm i @lambda-func/zod

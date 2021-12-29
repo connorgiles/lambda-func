@@ -1,6 +1,6 @@
 # `@lambda-func/errors`
 
-![https://img.shields.io/npm/v/@lambda-func/errors](https://img.shields.io/npm/v/@lambda-func/errors)
+[![https://img.shields.io/npm/v/@lambda-func/errors](https://img.shields.io/npm/v/@lambda-func/errors)](https://www.npmjs.com/package/@lambda-func/errors)
 
 ```shell
 npm i @lambda-func/errors

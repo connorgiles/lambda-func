@@ -1,6 +1,6 @@
 # `@lambda-func/select`
 
-![https://img.shields.io/npm/v/@lambda-func/select](https://img.shields.io/npm/v/@lambda-func/select)
+[![https://img.shields.io/npm/v/@lambda-func/select](https://img.shields.io/npm/v/@lambda-func/select)](https://www.npmjs.com/package/@lambda-func/select)
 
 ```shell
 npm i @lambda-func/select
