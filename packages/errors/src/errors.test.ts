@@ -99,5 +99,11 @@ describe('HTTP Exceptions', () => {
         })
       )
     })
+
+    it('properly compares instances with instanceof', () => {
+      expect(new Error()).not.toBeInstanceOf(ErrorClass)
+      expect(new err.HandlerError()).not.toBeInstanceOf(ErrorClass)
+      expect(obj).toBeInstanceOf(ErrorClass)
+    })
   })
 })
