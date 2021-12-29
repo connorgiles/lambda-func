@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@lambda-func/body-to-json",
+      "comment": "Allow body to be nullish",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@lambda-func/body-to-json"
+}
