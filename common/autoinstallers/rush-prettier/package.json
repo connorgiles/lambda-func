@@ -1,6 +1,10 @@
 {
   "name": "rush-prettier",
   "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/connorgiles/lambda-func",
+    "type": "git"
+  },
   "private": true,
   "dependencies": {
     "prettier": "^2.5.1",

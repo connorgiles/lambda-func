@@ -1,6 +1,10 @@
 {
   "name": "@lambda-func/select",
   "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/connorgiles/lambda-func",
+    "type": "git"
+  },
   "description": "The utils of lambda-func",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +17,9 @@
     "test": "jest",
     "lint": "eslint src/**/*.ts"
   },
-  "author": "Connor Giles <connor@connorgiles.com>",
+  "authors": [
+    "Connor Giles <connor@connorgiles.com>"
+  ],
   "license": "ISC",
   "devDependencies": {
     "typescript": "~4.5.4",

@@ -1,17 +1,19 @@
 {
   "name": "@lambda-func/e2e-tests",
   "version": "0.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "lib"
-  ],
+  "repository": {
+    "url": "https://github.com/connorgiles/lambda-func",
+    "type": "git"
+  },
+  "private": true,
   "scripts": {
     "build": "echo 'No builds - just tests'",
     "test": "jest",
     "lint": "eslint src/**/*.ts"
   },
-  "author": "Connor Giles <connor@connorgiles.com>",
+  "authors": [
+    "Connor Giles <connor@connorgiles.com>"
+  ],
   "license": "ISC",
   "devDependencies": {
     "typescript": "~4.5.4",
