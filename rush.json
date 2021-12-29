@@ -83,6 +83,11 @@
       "packageName": "@lambda-func/guard",
       "projectFolder": "packages/guard",
       "shouldPublish": true
+    },
+    {
+      "packageName": "@lambda-func/errors",
+      "projectFolder": "packages/errors",
+      "shouldPublish": true
     }
   ]
 }

@@ -5,6 +5,7 @@ specifiers:
   '@rush-temp/core': file:./projects/core.tgz
   '@rush-temp/dynamodb': file:./projects/dynamodb.tgz
   '@rush-temp/e2e-tests': file:./projects/e2e-tests.tgz
+  '@rush-temp/errors': file:./projects/errors.tgz
   '@rush-temp/guard': file:./projects/guard.tgz
   '@rush-temp/inject': file:./projects/inject.tgz
   '@rush-temp/record-iterator': file:./projects/record-iterator.tgz
@@ -38,6 +39,7 @@ dependencies:
   '@rush-temp/core': file:projects/core.tgz
   '@rush-temp/dynamodb': file:projects/dynamodb.tgz
   '@rush-temp/e2e-tests': file:projects/e2e-tests.tgz
+  '@rush-temp/errors': file:projects/errors.tgz
   '@rush-temp/guard': file:projects/guard.tgz
   '@rush-temp/inject': file:projects/inject.tgz
   '@rush-temp/record-iterator': file:projects/record-iterator.tgz
@@ -3496,7 +3498,7 @@ packages:
     dev: false
 
   file:projects/body-to-json.tgz:
-    resolution: {integrity: sha512-+GpNVmPqkaK0yQtbXPCqv4lYmHbdzAC9iaiIB+trKWMafGD53eMSgw6K+4Ltmvzi7R7TbxdqA6lfzrY2GC2sKw==, tarball: file:projects/body-to-json.tgz}
+    resolution: {integrity: sha512-W3gC6C7wEzV4XTiFnbu/J/cOV8QTds825oxuwFvslk1IEca6/aNohHRMFKDp/a9/4Kr/iU2SyihdFvhIwz8+ZA==, tarball: file:projects/body-to-json.tgz}
     name: '@rush-temp/body-to-json'
     version: 0.0.0
     dependencies:
@@ -3560,7 +3562,7 @@ packages:
     dev: false
 
   file:projects/dynamodb.tgz:
-    resolution: {integrity: sha512-DCobfLw2m+WDXjv+sVewL4ypaP1GYo+/hZwTD1dfsxftLUyZPyIdw14srm18OuTqkB5tLnkGOH+Q71sedz/Bjg==, tarball: file:projects/dynamodb.tgz}
+    resolution: {integrity: sha512-ZXQt4eOEeYGJ90JDYrPRC0cOPo47N3j+e0NIQ6GB1EGV0LHssGLLUL/Blt1oPYOZxPUegBm0DZNG888uvnoUWQ==, tarball: file:projects/dynamodb.tgz}
     name: '@rush-temp/dynamodb'
     version: 0.0.0
     dependencies:
@@ -3594,7 +3596,7 @@ packages:
     dev: false
 
   file:projects/e2e-tests.tgz:
-    resolution: {integrity: sha512-fC4mpxkoQ4grxhHCLxtjRnx5WmpzzRpGG8r0fw5jxtoqvjDQuT00avFC1c1SlMPSSW+nB65lc/LmbACTEIHBPg==, tarball: file:projects/e2e-tests.tgz}
+    resolution: {integrity: sha512-suO9DSv95uW8scOA24sBqJLNLnAxR15dB1jfT5qKSO/J3T5j4q49aCDVn/Ih3FMjc/Tkt0aoMMVgML292XSkXA==, tarball: file:projects/e2e-tests.tgz}
     name: '@rush-temp/e2e-tests'
     version: 0.0.0
     dependencies:
@@ -3628,8 +3630,39 @@ packages:
       - utf-8-validate
     dev: false
 
+  file:projects/errors.tgz:
+    resolution: {integrity: sha512-QIY08GOJltAR1Zdw1hIBuntnjPU3RZsKIoJrhH602OMYv6NoXSytLPkx6Z7iu+DSETvhdp7cGQd6MQ5NVWhT4Q==, tarball: file:projects/errors.tgz}
+    name: '@rush-temp/errors'
+    version: 0.0.0
+    dependencies:
+      '@types/jest': 27.0.3
+      '@types/node': 16.11.17
+      '@typescript-eslint/eslint-plugin': 5.8.1_3a47348159e115370aa4cba56aba33b6
+      '@typescript-eslint/parser': 5.8.1_eslint@8.5.0+typescript@4.5.4
+      eslint: 8.5.0
+      eslint-config-prettier: 8.3.0_eslint@8.5.0
+      eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      prettier: 2.5.1
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
+      tslib: 2.3.1
+      typescript: 4.5.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: false
+
   file:projects/guard.tgz:
-    resolution: {integrity: sha512-Cqyjz153iAwpc8H+CfuiA5ddPAwfoJU+3stIatgPdB5zT5arEZdjS+kAROxqyNwXPyPSmRelyTFnZwvY7k02JA==, tarball: file:projects/guard.tgz}
+    resolution: {integrity: sha512-ZrNSCe10BS+DYAMAXEmPPehghMhgllmc9UXYfBo7wIs3yML3jwabOXaHhPc6j0492+A6KpUdHkkkTo6ypQjMyQ==, tarball: file:projects/guard.tgz}
     name: '@rush-temp/guard'
     version: 0.0.0
     dependencies:
@@ -3660,7 +3693,7 @@ packages:
     dev: false
 
   file:projects/inject.tgz:
-    resolution: {integrity: sha512-++8W9Lgj+VvtYJrna4Dop7m8ZJCDE32/LJTe+TC+GE//0pGqxkDAOxf5k+wCATI9NzU1BmO3RhQP9xuWjkM/PQ==, tarball: file:projects/inject.tgz}
+    resolution: {integrity: sha512-P3wqOBp6/kTBJttzsLIRnThvP0E5QyAJZpqFzBptqNs4QeyliQagz80EEzBe0s4kc2/blWi8ZCHHWfIbOPwERA==, tarball: file:projects/inject.tgz}
     name: '@rush-temp/inject'
     version: 0.0.0
     dependencies:
@@ -3691,7 +3724,7 @@ packages:
     dev: false
 
   file:projects/record-iterator.tgz:
-    resolution: {integrity: sha512-JifRu/C2D7LLVzC1gzv+y2EX4LihtMnDVxucqGmWJyKLJnAT/jDAEGE6lQSoDnhrA/rMGfLANcu/YKDYN8Jfzw==, tarball: file:projects/record-iterator.tgz}
+    resolution: {integrity: sha512-c11ysJUVqGvOEBC/8GdkYu73ReQVUxrRE/M1BU+6hxY6KfeLmgyvGBAL+uNyEsggo893iTFhTD7uAO4XzPaXag==, tarball: file:projects/record-iterator.tgz}
     name: '@rush-temp/record-iterator'
     version: 0.0.0
     dependencies:
@@ -3722,7 +3755,7 @@ packages:
     dev: false
 
   file:projects/s3.tgz:
-    resolution: {integrity: sha512-5kHNrB9NA6lGZcE6tYz4VFlcugq0/r2r6zRDBpPhCijmKMVvABNd+S+aqa3P/u59LeMrZy2izeLC3d6UarhqLg==, tarball: file:projects/s3.tgz}
+    resolution: {integrity: sha512-5n5qC/GS8kplEuzJwT0iNZQ+TdeEygQu8Iv2tBU9P+eluhJ1SlS3Hs45las7qgbTfw0psTU0TsoztYRIlmt9xg==, tarball: file:projects/s3.tgz}
     name: '@rush-temp/s3'
     version: 0.0.0
     dependencies:
@@ -3767,7 +3800,7 @@ packages:
     dev: false
 
   file:projects/select.tgz:
-    resolution: {integrity: sha512-6mmy8MGCHeIo2u8EEM3/LQDPTPaB4s3nmqraoPMsM1AZ19nArGnivq0LtA5m5Su/hfcEkFzOcEJZcOw1yGcwZg==, tarball: file:projects/select.tgz}
+    resolution: {integrity: sha512-8aCeE1sG8PobOAn1xgaYD3kEVID6uAdJ+Fd2Y9SL8knz9Gq4ZJ7PEY8HhdHCUE3tzpyQThHkgB3noQdJYw7HBg==, tarball: file:projects/select.tgz}
     name: '@rush-temp/select'
     version: 0.0.0
     dependencies:
@@ -3798,7 +3831,7 @@ packages:
     dev: false
 
   file:projects/sqs.tgz:
-    resolution: {integrity: sha512-Fb3GqV//XOb4Yg6C4G0RL3gmGf8qR46SMPihBu8df639EZymD4Mqbce2709l9HhSKN3Irq9TI1cegQmSwU5HJQ==, tarball: file:projects/sqs.tgz}
+    resolution: {integrity: sha512-9m9GaInuZf7P04x3zo2t9j9O4DJrWVnsDBMa4DKSKo82LzBIkM7p/oIr8jOuDppM0RwKVh80jLigC2c0XsmTMw==, tarball: file:projects/sqs.tgz}
     name: '@rush-temp/sqs'
     version: 0.0.0
     dependencies:
@@ -3831,7 +3864,7 @@ packages:
     dev: false
 
   file:projects/template.tgz:
-    resolution: {integrity: sha512-B5oKdJLYtaWgrg6XWRwZnev0jbaLClSlQKVu0VP/3xQsHhujTPNkNtnk5dJ+cmIRHkSq9jCBwsJsFApltHoIdA==, tarball: file:projects/template.tgz}
+    resolution: {integrity: sha512-fE3TtiJAsHp9qyVfhK1p+I0fFgb3OX1AYEvHycRU2Vw0ju/deZSfKgkzP0DtNrVWklZc9puNfYxYouFJuCBDbw==, tarball: file:projects/template.tgz}
     name: '@rush-temp/template'
     version: 0.0.0
     dependencies:
@@ -3862,7 +3895,7 @@ packages:
     dev: false
 
   file:projects/zod.tgz:
-    resolution: {integrity: sha512-+FxLw0Y10OA5RHV2LzA8LSU9YWFl0aIebO60nW5WyL7B7horif6dVxRXFMTlKoT+nI7kFA2KgpYT2N9bS5eDJA==, tarball: file:projects/zod.tgz}
+    resolution: {integrity: sha512-Gc+YFWYGf1OfFKPfMRtAYZO3bmuuNBRtIpZK32s9i0p2ZSBLyxogAPThNuOxjCq7jUx4BGZb4/SK2ny5aC0sFQ==, tarball: file:projects/zod.tgz}
     name: '@rush-temp/zod'
     version: 0.0.0
     dependencies:
