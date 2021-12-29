@@ -1,0 +1,17 @@
+{
+  "name": "@lambda-func/api-gateway",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "@lambda-func/api-gateway_v0.1.0",
+      "date": "Wed, 29 Dec 2021 09:13:10 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add API Gatway handler"
+          }
+        ]
+      }
+    }
+  ]
+}
