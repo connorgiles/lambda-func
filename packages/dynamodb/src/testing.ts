@@ -1,11 +1,7 @@
-import { DynamoDBRecord, StreamRecord, DynamoDBStreamEvent } from 'aws-lambda'
-import { DeepPartial } from '@lambda-func/core'
+import { DynamoDBRecord, DynamoDBStreamEvent } from 'aws-lambda'
+import { UnmarshalledDynamoDBRecord } from './types'
 
-export type PartialDynamoDBRecord = DeepPartial<DynamoDBRecord> & {
-  dynamodb?: Pick<StreamRecord, 'Keys' | 'NewImage' | 'OldImage'>
-}
-
-export const createDynamoDBRecord = (partial?: PartialDynamoDBRecord): DynamoDBRecord => ({
+export const createDynamoDBRecord = (partial?: Partial<DynamoDBRecord>): DynamoDBRecord => ({
   awsRegion: '',
   eventID: '',
   eventName: 'INSERT',
@@ -26,7 +22,29 @@ export const createDynamoDBRecord = (partial?: PartialDynamoDBRecord): DynamoDBR
 })
 
 export const createDynamoDBStreamEvent = (
-  partials: Array<PartialDynamoDBRecord | undefined> = [undefined]
+  partials: Array<Partial<DynamoDBRecord> | undefined> = [undefined]
 ): DynamoDBStreamEvent => ({
   Records: partials.map(createDynamoDBRecord)
+})
+
+export const createUnmarshalledDynamoDBRecord = (
+  partial?: Partial<UnmarshalledDynamoDBRecord>
+): UnmarshalledDynamoDBRecord => ({
+  awsRegion: '',
+  eventID: '',
+  eventName: 'INSERT',
+  eventSource: '',
+  eventSourceARN: '',
+  eventVersion: '',
+  ...partial,
+  dynamodb: {
+    ApproximateCreationDateTime: 0,
+    SequenceNumber: '',
+    SizeBytes: 0,
+    StreamViewType: 'NEW_IMAGE',
+    Keys: {},
+    NewImage: {},
+    OldImage: {},
+    ...partial?.dynamodb
+  }
 })

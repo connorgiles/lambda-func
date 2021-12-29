@@ -1,17 +1,13 @@
-# Lambda Middleware - Inject
+# `@lambda-func/handler`
 
-This package contains an higher order function based middleware to provie dependency injection.
+This package contains a higher order function.
 
 ## Usage
 
 ```typescript
-import { inject } from '@lambda-func/inject'
-import { db } from '../db'
+import { handler } from '@lambda-func/handler'
 
-export const handler = inject(
-  'database',
-  db
-)(async (event, { database }) => {
-  await database.save(event)
+export const handler = inject()(async (event) => {
+  return event.body
 })
 ```

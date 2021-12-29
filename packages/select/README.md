@@ -1,17 +1,13 @@
-# Lambda Middleware - Inject
+# `@lambda-func/select`
 
-This package contains an higher order function based middleware to provie dependency injection.
+This package provides a middleware to provide a selector for the incoming event.
 
 ## Usage
 
 ```typescript
-import { inject } from '@lambda-func/inject'
-import { db } from '../db'
+import { select } from '@lambda-func/select'
 
-export const handler = inject(
-  'database',
-  db
-)(async (event, { database }) => {
-  await database.save(event)
+export const handler = select((event) => event.body)(async (body) => {
+  return body
 })
 ```

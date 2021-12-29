@@ -1,17 +1,25 @@
-# Lambda Middleware - Inject
+# `@lambda-func/guard`
 
-This package contains an higher order function based middleware to provie dependency injection.
+This package contains a middleware to use type guards for type narrowing.
 
 ## Usage
 
 ```typescript
-import { inject } from '@lambda-func/inject'
-import { db } from '../db'
+import { guard } from '@lambda-func/guard'
 
-export const handler = inject(
-  'database',
-  db
-)(async (event, { database }) => {
-  await database.save(event)
+const isString = (value: unknown): value is string => typeof value === 'string'
+
+// will throw an error if not passed
+export const handler = guard(isString)(async (event) => {
+  return event.length
+})
+
+// can pass an alternate error handler
+const throwCustomError = async () => {
+  throw new CustomError()
+}
+
+export const handler = guard(isString, { onFailedPredicate: throwCustomError })(async (event) => {
+  return event.length
 })
 ```

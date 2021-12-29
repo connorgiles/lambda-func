@@ -1,17 +1,19 @@
-# Lambda Middleware - Inject
+# `@lambda-func/body-to-json`
 
-This package contains an higher order function based middleware to provie dependency injection.
+This package includes a `lambda-func` middleware to parse the JSON in the `body` of an incoming event.
 
 ## Usage
 
 ```typescript
-import { inject } from '@lambda-func/inject'
-import { db } from '../db'
+import { APIGatewayProxyEvent } from 'aws-lambda'
+import { bodyToJson } from '@lambda-func/body-to-json'
 
-export const handler = inject(
-  'database',
-  db
-)(async (event, { database }) => {
-  await database.save(event)
+type User = { email: string }
+const isUser = (value: unknown): value is User => typeof (<User>value).email === 'string'
+
+export const handler = bodyToJson<APIGatewayProxyEvent>()(async (event) => {
+  if (isUser(event.body)) {
+    // do something
+  }
 })
 ```

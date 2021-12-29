@@ -1,6 +1,6 @@
-# Lambda Middleware - Inject
+# `@lambda-func/inject`
 
-This package contains an higher order function based middleware to provie dependency injection.
+This package contains a higher order function based middleware for dependency injection.
 
 ## Usage
 

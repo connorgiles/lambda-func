@@ -1,17 +1,19 @@
-# Lambda Middleware - Inject
+# `@lambda-func/zod`
 
-This package contains an higher order function based middleware to provie dependency injection.
+This package contains a middleware to use [zod](https://github.com/colinhacks/zod) for type parsing.
 
 ## Usage
 
 ```typescript
-import { inject } from '@lambda-func/inject'
-import { db } from '../db'
+import { z } from 'zod'
+import { zodParser } from '@lambda-func/zod'
 
-export const handler = inject(
-  'database',
-  db
-)(async (event, { database }) => {
-  await database.save(event)
+const Request = z.object({
+  name: z.string()
+})
+
+// will throw an error if not value Request
+export const handler = zodParser(Request)(async (event) => {
+  return event.name
 })
 ```

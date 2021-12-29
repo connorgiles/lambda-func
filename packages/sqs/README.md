@@ -1,17 +1,24 @@
-# Lambda Middleware - Inject
+# `@lambda-fund/sqs`
 
-This package contains an higher order function based middleware to provie dependency injection.
+This package contains a set of utilities for when working with SQS handlers.
 
 ## Usage
 
 ```typescript
-import { inject } from '@lambda-func/inject'
-import { db } from '../db'
+import { sqs } from '@lambda-func/sqs'
 
-export const handler = inject(
-  'database',
-  db
-)(async (event, { database }) => {
-  await database.save(event)
+export const handler = sqs()(async (event) => {
+  expect(typeof event).toBe('object')
 })
 ```
+
+### Testing
+
+This package also includes some testing utilities to make input mapping easier.
+
+- `createParsedSQSRecord()` - mock the input event for the middleware stack
+
+#### Other Options
+
+- `createSQSEvent()` - for raw event mocking
+- `createSQSRecord()` - after record iteration

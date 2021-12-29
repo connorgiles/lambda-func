@@ -1,3 +1,3 @@
-# Lambda Middleware - Core
+# `@lambda-func/core`
 
-This package contains the core types and utilities of the `@lambda-func` middleware framework.
+This package contains the core types and utilities of the `lambda-func` middleware framework.

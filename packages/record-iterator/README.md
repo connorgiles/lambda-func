@@ -1,17 +1,3 @@
-# Lambda Middleware - Inject
+# `@lambda-func/record-iterator`
 
-This package contains an higher order function based middleware to provie dependency injection.
-
-## Usage
-
-```typescript
-import { inject } from '@lambda-func/inject'
-import { db } from '../db'
-
-export const handler = inject(
-  'database',
-  db
-)(async (event, { database }) => {
-  await database.save(event)
-})
-```
+This middleware iterates over the `Records` of an incoming event.
