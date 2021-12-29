@@ -5,7 +5,3 @@ import { unmarshallDynamoDBRecord } from './unmarshall'
 
 export const dynamodb = () =>
   compose(recordIterator<DynamoDBStreamEvent, Context, void>(), unmarshallDynamoDBRecord())
-
-dynamodb()(async (event) => {
-  event.dynamodb.NewImage
-})
