@@ -1,13 +1,23 @@
 import { LambdaHandler } from '@lambda-func/core'
 
-import { optionalJsonParse } from './utils'
+import { Maybe, optionalJsonParse } from './utils'
 
 export type BodyToJsonParameters = {
   throwOnFailure?: boolean
 }
 
+const formatJsonBody = (body: Maybe<string>, throwOnFailure?: boolean): unknown => {
+  const bodyString = body ?? ''
+
+  if (throwOnFailure) {
+    return JSON.parse(bodyString)
+  }
+
+  return optionalJsonParse(bodyString)
+}
+
 export const bodyToJson =
-  <TEvent extends { body: string } = { body: string }, TContext = unknown, TResponse = unknown>(
+  <TEvent extends { body?: Maybe<string> } = { body: string }, TContext = unknown, TResponse = unknown>(
     params: BodyToJsonParameters = {}
   ) =>
   (
@@ -17,7 +27,7 @@ export const bodyToJson =
     handler(
       {
         ...event,
-        body: params.throwOnFailure ? JSON.parse(event.body) : optionalJsonParse(event.body)
+        body: formatJsonBody(event.body, params.throwOnFailure)
       },
       context
     )
