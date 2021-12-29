@@ -5,6 +5,7 @@ specifiers:
   '@rush-temp/core': file:./projects/core.tgz
   '@rush-temp/dynamodb': file:./projects/dynamodb.tgz
   '@rush-temp/e2e-tests': file:./projects/e2e-tests.tgz
+  '@rush-temp/guard': file:./projects/guard.tgz
   '@rush-temp/inject': file:./projects/inject.tgz
   '@rush-temp/record-iterator': file:./projects/record-iterator.tgz
   '@rush-temp/s3': file:./projects/s3.tgz
@@ -37,6 +38,7 @@ dependencies:
   '@rush-temp/core': file:projects/core.tgz
   '@rush-temp/dynamodb': file:projects/dynamodb.tgz
   '@rush-temp/e2e-tests': file:projects/e2e-tests.tgz
+  '@rush-temp/guard': file:projects/guard.tgz
   '@rush-temp/inject': file:projects/inject.tgz
   '@rush-temp/record-iterator': file:projects/record-iterator.tgz
   '@rush-temp/s3': file:projects/s3.tgz
@@ -3614,6 +3616,37 @@ packages:
       tslib: 2.3.1
       typescript: 4.5.4
       zod: 3.11.6
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: false
+
+  file:projects/guard.tgz:
+    resolution: {integrity: sha512-Cqyjz153iAwpc8H+CfuiA5ddPAwfoJU+3stIatgPdB5zT5arEZdjS+kAROxqyNwXPyPSmRelyTFnZwvY7k02JA==, tarball: file:projects/guard.tgz}
+    name: '@rush-temp/guard'
+    version: 0.0.0
+    dependencies:
+      '@types/jest': 27.0.3
+      '@types/node': 16.11.17
+      '@typescript-eslint/eslint-plugin': 5.8.1_3a47348159e115370aa4cba56aba33b6
+      '@typescript-eslint/parser': 5.8.1_eslint@8.5.0+typescript@4.5.4
+      eslint: 8.5.0
+      eslint-config-prettier: 8.3.0_eslint@8.5.0
+      eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      prettier: 2.5.1
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
+      tslib: 2.3.1
+      typescript: 4.5.4
     transitivePeerDependencies:
       - '@babel/core'
       - babel-jest

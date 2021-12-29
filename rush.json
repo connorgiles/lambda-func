@@ -78,6 +78,11 @@
       "packageName": "@cg-lambda/scripts",
       "projectFolder": "internals/scripts",
       "shouldPublish": false
+    },
+    {
+      "packageName": "@cg-lambda/guard",
+      "projectFolder": "packages/guard",
+      "shouldPublish": true
     }
   ]
 }
