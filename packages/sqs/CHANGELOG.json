@@ -2,6 +2,23 @@
   "name": "@lambda-func/sqs",
   "entries": [
     {
+      "version": "0.1.0",
+      "tag": "@lambda-func/sqs_v0.1.0",
+      "date": "Wed, 29 Dec 2021 18:50:20 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add support for partial batch failure reporting"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@lambda-func/body-to-json\" from `~0.0.0` to `~0.1.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.1",
       "tag": "@lambda-func/sqs_v0.0.1",
       "date": "Wed, 29 Dec 2021 09:20:46 GMT",

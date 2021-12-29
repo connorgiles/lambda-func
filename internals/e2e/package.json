@@ -35,7 +35,7 @@
     "@lambda-func/core": "~0.0.0",
     "tslib": "~2.3.1",
     "@lambda-func/inject": "~0.0.0",
-    "@lambda-func/body-to-json": "~0.0.0",
+    "@lambda-func/body-to-json": "~0.1.0",
     "@lambda-func/zod": "~0.0.0",
     "zod": "~3.11.6",
     "@lambda-func/select": "~0.0.0",

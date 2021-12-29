@@ -1,6 +1,6 @@
 {
   "name": "@lambda-func/sqs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "url": "https://github.com/connorgiles/lambda-func",
     "type": "git"
@@ -41,6 +41,6 @@
   "dependencies": {
     "@lambda-func/core": "~0.0.0",
     "tslib": "~2.3.1",
-    "@lambda-func/body-to-json": "~0.0.0"
+    "@lambda-func/body-to-json": "~0.1.0"
   }
 }

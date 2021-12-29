@@ -1,0 +1,17 @@
+{
+  "name": "@lambda-func/body-to-json",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "@lambda-func/body-to-json_v0.1.0",
+      "date": "Wed, 29 Dec 2021 18:50:20 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added optional ability to forward body on invalid JSON"
+          }
+        ]
+      }
+    }
+  ]
+}
