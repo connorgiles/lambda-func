@@ -1,0 +1,20 @@
+{
+  "name": "@cg-lambda/scripts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "test": "echo 'No tests - just templating'",
+    "lint": "eslint src/**/*.ts",
+    "exec": "ts-node"
+  },
+  "author": "Connor Giles <connor@connorgiles.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "*",
+    "yargs": "~17.3.1",
+    "@types/yargs": "~17.0.8",
+    "typescript": "~4.5.4",
+    "tslib": "~2.3.1"
+  }
+}

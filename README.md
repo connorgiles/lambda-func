@@ -46,12 +46,13 @@ This repo uses [rush](https://rushjs.io/) to maintain a monorepo of packages. [L
 npm i -g @microsoft/rush
 ```
 
-### Commands
+### Useful Commands
 
 - `rush build` - build pacakges that need it
 - `rush test` - test all packages
 - `rush rebuild` - builds all packages
 - `rush publish` - publish all packages
+- `rush purge` - to clean up temporary files created by rush
 
 ### Installing Dependencies
 
