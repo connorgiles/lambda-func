@@ -1,5 +1,7 @@
 # Lambda Middleware
 
+[![@lambda-func CI/CD](https://github.com/connorgiles/lambda-func/actions/workflows/ci.yml/badge.svg)](https://github.com/connorgiles/lambda-func/actions/workflows/ci.yml)
+
 This monorepo contains the a set of higher order functions and utilities to create composable middleware for lambda functions.
 
 ## Published Packages
