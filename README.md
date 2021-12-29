@@ -2,6 +2,10 @@
 
 This monorepo contains the a set of higher order functions and utilities to create composable middleware for lambda functions.
 
+## Published Packages
+
+[View published pacakges here](https://www.npmjs.com/org/lambda-func)
+
 ## Usage
 
 ```typescript
@@ -50,6 +54,7 @@ npm i -g @microsoft/rush
 
 - `rush build` - build pacakges that need it
 - `rush test` - test all packages
+- `rush create-package --name package-name` - create a new package based on the provided [template](./internals/template/)
 - `rush rebuild` - builds all packages
 - `rush publish` - publish all packages
 - `rush purge` - to clean up temporary files created by rush
