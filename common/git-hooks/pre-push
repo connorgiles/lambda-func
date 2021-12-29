@@ -1,5 +1,5 @@
 #!/bin/sh
 
-if [[cat $1 == *"[skip ci]"*]]; then
+ if [[ "$(git log -1)" = *"[skip ci]"* ]]; then
     node common/scripts/install-run-rush.js test
 fi
