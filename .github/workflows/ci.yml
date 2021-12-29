@@ -20,20 +20,14 @@ jobs:
           node-version: '16.x'
           registry-url: https://registry.npmjs.org/
 
-      - name: Rush CLI
-        run: npm install -g @microsoft/rush
-
-      - name: Rush Install
-        uses: advancedcsg-open/actions-rush@v1.0.1
-
       - name: Rush Build
-        run: rush build
+        run: node common/scripts/install-run-rush.js build
 
       - name: Rush Lint
-        run: rush lint
+        run: node common/scripts/install-run-rush.js lint
 
       - name: Rush Test
-        run: rush test
+        run: node common/scripts/install-run-rush.js test
 
       - name: Commit Dist
         if: ${{ github.ref == 'refs/heads/main' }}
@@ -46,6 +40,6 @@ jobs:
       # any published module.
       - name: Publish
         if: ${{ github.ref == 'refs/heads/main' }}
-        run: rush publish -p -b main --include-all --set-access-level=public
+        run: node common/scripts/install-run-rush.js publish -p -b main --include-all --set-access-level=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
