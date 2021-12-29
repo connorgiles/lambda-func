@@ -1,4 +1,4 @@
-# `@lambda-fund/sns`
+# `@lambda-func/sns`
 
 This package contains a set of utilities for when working with SNS handlers.
 

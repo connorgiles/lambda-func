@@ -12,7 +12,7 @@ This package contains a higher order function.
 
 ```typescript
 import { apiGateway } from '@lambda-func/api-gateway'
-import { NotFound } from '@lambda-fund/errors'
+import { NotFound } from '@lambda-func/errors'
 
 export const handler = apiGateway()(async (event) => {
   if (someCondition()) {

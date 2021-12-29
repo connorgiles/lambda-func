@@ -1,4 +1,4 @@
-# `@lambda-fund/sqs`
+# `@lambda-func/sqs`
 
 This package contains a set of utilities for when working with SQS handlers.
 
