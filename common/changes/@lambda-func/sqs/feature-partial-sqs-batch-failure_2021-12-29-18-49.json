@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@lambda-func/sqs",
+      "comment": "Add support for partial batch failure reporting",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@lambda-func/sqs"
+}

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@lambda-func/sns",
+      "comment": "Export individual parsing middleware",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@lambda-func/sns"
+}

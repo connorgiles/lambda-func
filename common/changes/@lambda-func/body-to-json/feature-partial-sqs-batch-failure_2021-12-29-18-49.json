@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@lambda-func/body-to-json",
+      "comment": "Added optional ability to forward body on invalid JSON",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@lambda-func/body-to-json"
+}
