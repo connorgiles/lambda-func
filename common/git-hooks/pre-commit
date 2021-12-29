@@ -1,5 +1,8 @@
 #!/bin/sh
 
-node common/scripts/install-run-rush.js prettier
-node common/scripts/install-run-rush.js lint
+if [[cat $1 == *"[skip ci]"*]]; then
+    node common/scripts/install-run-rush.js prettier
+    node common/scripts/install-run-rush.js lint
+fi
+
 
