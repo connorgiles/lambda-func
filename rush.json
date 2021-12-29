@@ -415,6 +415,11 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@cg-lambda/s3",
+      "projectFolder": "packages/s3",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@cg-lambda/select",
       "projectFolder": "packages/select",
       "shouldPublish": true
