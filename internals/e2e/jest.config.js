@@ -1,2 +1,6 @@
 const baseConfig = require('../../jest.unit.config')
-module.exports = baseConfig
+
+module.exports = {
+  ...baseConfig,
+  collectCoverage: false
+}

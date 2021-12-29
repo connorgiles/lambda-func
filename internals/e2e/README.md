@@ -1,17 +1,13 @@
-# Lambda Middleware - Inject
+# End to End Tests
 
-This package contains an higher order function based middleware to provie dependency injection.
+This project contains a suite of E2E tests for `cg-lambda` utilities.
 
 ## Usage
 
-```typescript
-import { inject } from '@cg-lambda/inject'
-import { db } from '../db'
+Run the test suite:
 
-export const handler = inject(
-  'database',
-  db
-)(async (event, { database }) => {
-  await database.save(event)
-})
-```
+- `npm test`
+
+## Contributing
+
+Please feel free to contribute more test cases.
