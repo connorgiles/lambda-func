@@ -2,6 +2,18 @@
   "name": "@lambda-func/sns",
   "entries": [
     {
+      "version": "0.1.1",
+      "tag": "@lambda-func/sns_v0.1.1",
+      "date": "Wed, 29 Dec 2021 09:20:46 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix typo in readme"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.0",
       "tag": "@lambda-func/sns_v0.1.0",
       "date": "Wed, 29 Dec 2021 09:13:10 GMT",
