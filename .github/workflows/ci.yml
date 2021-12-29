@@ -1,0 +1,51 @@
+name: '@lambda-func CI/CD'
+
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: https://registry.npmjs.org/
+
+      - name: Rush CLI
+        run: npm install -g @microsoft/rush
+
+      - name: Rush Install
+        uses: advancedcsg-open/actions-rush@v1.0.1
+
+      - name: Rush Build
+        run: rush build
+
+      - name: Rush Lint
+        run: rush lint
+
+      - name: Rush Test
+        run: rush test
+
+      - name: Commit Dist
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -a -m 'Updated dists' || echo "No changes to commit"
+          git push
+      # Can't be in a separate job as we need the results of any build to be included in
+      # any published module.
+      - name: Publish
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: rush publish -p -b main --include-all --set-access-level=public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
