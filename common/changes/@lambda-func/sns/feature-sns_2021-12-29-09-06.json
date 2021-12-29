@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@lambda-func/sns",
+      "comment": "Add SNS handler wrapper",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@lambda-func/sns"
+}
