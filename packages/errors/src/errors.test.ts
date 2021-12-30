@@ -73,7 +73,7 @@ describe('HTTP Exceptions', () => {
     err.GatewayTimeout,
     err.HttpVersionNotSupported,
     err.VariantAlsoNegotiates,
-    err.UnsufficientStorage,
+    err.InsufficientStorage,
     err.LoopDetected,
     err.NotExtended,
     err.NetworkAuthenticationRequired

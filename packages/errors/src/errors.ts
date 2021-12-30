@@ -1,12 +1,15 @@
+export type HandlerErrorList = { code: string; path?: string; message: string }[]
 export class HandlerError extends Error {
   statusCode = 500
   title = 'Internal Server Error'
 
   detail?: string
+  errors?: HandlerErrorList
 
-  constructor(detail?: string) {
+  constructor(detail?: string, errors?: HandlerErrorList) {
     super(detail || 'HTTP error')
     this.detail = detail
+    this.errors = errors
   }
 
   toJSON() {
@@ -44,7 +47,7 @@ export class PaymentRequired extends HandlerError {
 
 export class Forbidden extends HandlerError {
   statusCode = 403
-  title = 'Forbiddden'
+  title = 'Forbidden'
 }
 
 export class NotFound extends HandlerError {
@@ -202,9 +205,9 @@ export class VariantAlsoNegotiates extends HandlerError {
   title = 'Variant Also Negotiates'
 }
 
-export class UnsufficientStorage extends HandlerError {
+export class InsufficientStorage extends HandlerError {
   statusCode = 507
-  title = 'Unsufficient Storage'
+  title = 'Insufficient Storage'
 }
 
 export class LoopDetected extends HandlerError {
