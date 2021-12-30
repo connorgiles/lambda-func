@@ -1,22 +1,27 @@
-export type HandlerErrorList = { code: string; path?: string; message: string }[]
+export type HandlerErrorIssue = {
+  code: string
+  path?: string
+  message: string
+}
 export class HandlerError extends Error {
   statusCode = 500
   title = 'Internal Server Error'
 
   detail?: string
-  errors?: HandlerErrorList
+  issues?: HandlerErrorIssue[]
 
-  constructor(detail?: string, errors?: HandlerErrorList) {
+  constructor(detail?: string, issues?: HandlerErrorIssue[]) {
     super(detail || 'HTTP error')
     this.detail = detail
-    this.errors = errors
+    this.issues = issues
   }
 
   toJSON() {
     return {
       statusCode: this.statusCode,
       error: this.title,
-      message: this.detail
+      message: this.detail,
+      issues: this.issues
     }
   }
 }
