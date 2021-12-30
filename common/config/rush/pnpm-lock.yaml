@@ -15,6 +15,7 @@ specifiers:
   '@rush-temp/select': file:./projects/select.tgz
   '@rush-temp/sns': file:./projects/sns.tgz
   '@rush-temp/sqs': file:./projects/sqs.tgz
+  '@rush-temp/ssm': file:./projects/ssm.tgz
   '@rush-temp/template': file:./projects/template.tgz
   '@rush-temp/zod': file:./projects/zod.tgz
   '@types/jest': ~27.0.3
@@ -50,6 +51,7 @@ dependencies:
   '@rush-temp/select': file:projects/select.tgz
   '@rush-temp/sns': file:projects/sns.tgz
   '@rush-temp/sqs': file:projects/sqs.tgz
+  '@rush-temp/ssm': file:projects/ssm.tgz
   '@rush-temp/template': file:projects/template.tgz
   '@rush-temp/zod': file:projects/zod.tgz
   '@types/jest': 27.0.3
@@ -3631,7 +3633,7 @@ packages:
     dev: false
 
   file:projects/e2e-tests.tgz:
-    resolution: {integrity: sha512-cc6vT+mXN2ck2v77zVF72K/YXLQAV0WNLR+j3tsvrVcoHDuUuUWnIfgvRhO3/Jf/1F3lLZT1bXvSTIEocpcWYA==, tarball: file:projects/e2e-tests.tgz}
+    resolution: {integrity: sha512-SaSZ5IJnlGOkzVKJboiK4X+G0MrMrzYIrKB7bwwg3JbCgJp4QC/3/cREkZNG3UtygBh9Z8z3okA9JnVTFp4uSA==, tarball: file:projects/e2e-tests.tgz}
     name: '@rush-temp/e2e-tests'
     version: 0.0.0
     dependencies:
@@ -3899,7 +3901,7 @@ packages:
     dev: false
 
   file:projects/sqs.tgz:
-    resolution: {integrity: sha512-KieWXXL5E5X+P+64PLIhEQJsDUwNeZ/8jP4dPx0sVd/xbWytDfTaJpYGM3PNqJk8R75H9WkMWWlmgiUJVB8IdQ==, tarball: file:projects/sqs.tgz}
+    resolution: {integrity: sha512-NG86tBmpFCGwCx55pCj94w2kIufz6ZNX6x/qRHKQwcMhxwllAhOKwUaByncKpyHzYoU4f2oeuyWynB0qTJfCsQ==, tarball: file:projects/sqs.tgz}
     name: '@rush-temp/sqs'
     version: 0.0.0
     dependencies:
@@ -3909,6 +3911,38 @@ packages:
       '@typescript-eslint/eslint-plugin': 5.8.1_3a47348159e115370aa4cba56aba33b6
       '@typescript-eslint/parser': 5.8.1_eslint@8.5.0+typescript@4.5.4
       aws-lambda: 1.0.7
+      eslint: 8.5.0
+      eslint-config-prettier: 8.3.0_eslint@8.5.0
+      eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
+      jest: 27.4.5
+      jest-junit: 13.0.0
+      prettier: 2.5.1
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
+      tslib: 2.3.1
+      typescript: 4.5.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - esbuild
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: false
+
+  file:projects/ssm.tgz:
+    resolution: {integrity: sha512-wDxyZIpq9vXO3xYSdhGc8Za9UG/L4AYDP6tA1jpA0NevK0yIbi8yZNokv7XsOd/pCqShJONKSIMyIJFWawRAoA==, tarball: file:projects/ssm.tgz}
+    name: '@rush-temp/ssm'
+    version: 0.0.0
+    dependencies:
+      '@types/jest': 27.0.3
+      '@types/node': 16.11.17
+      '@typescript-eslint/eslint-plugin': 5.8.1_3a47348159e115370aa4cba56aba33b6
+      '@typescript-eslint/parser': 5.8.1_eslint@8.5.0+typescript@4.5.4
+      aws-sdk: 2.1048.0
       eslint: 8.5.0
       eslint-config-prettier: 8.3.0_eslint@8.5.0
       eslint-plugin-prettier: 4.0.0_94e1b6d3ce6ea916847122712570e9ae
@@ -3963,7 +3997,7 @@ packages:
     dev: false
 
   file:projects/zod.tgz:
-    resolution: {integrity: sha512-WjA8ISnqyHUNuabXswxqocE/JNUuneQE4W9somV8ZPKDM0sbq1Bk0AFyS6kiOWT50+gyOiJsWv1ba9qL/yJBzw==, tarball: file:projects/zod.tgz}
+    resolution: {integrity: sha512-M+20JHSsNZnkp7P81gwlu4PsZOcgZxS69+OkLe9pofswdaaEiOoYTeT1gndTg6IK3Kgyxf/HsmtTqgc5KFeBLA==, tarball: file:projects/zod.tgz}
     name: '@rush-temp/zod'
     version: 0.0.0
     dependencies:

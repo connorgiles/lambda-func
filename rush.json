@@ -98,6 +98,11 @@
       "packageName": "@lambda-func/sns",
       "projectFolder": "packages/sns",
       "shouldPublish": true
+    },
+    {
+      "packageName": "@lambda-func/ssm",
+      "projectFolder": "packages/ssm",
+      "shouldPublish": true
     }
   ]
 }
