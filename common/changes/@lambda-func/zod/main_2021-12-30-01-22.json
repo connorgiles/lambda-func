@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@lambda-func/zod",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@lambda-func/zod"
+}

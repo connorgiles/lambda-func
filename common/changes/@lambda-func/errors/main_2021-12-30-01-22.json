@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@lambda-func/errors",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@lambda-func/errors"
+}
