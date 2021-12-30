@@ -19,7 +19,7 @@ export const zodParser =
     handler: LambdaHandler<z.infer<typeof model>, TContext, TResponse>
   ): LambdaHandler<TEvent, TContext, TResponse> =>
   (event, context) => {
-    const result = model.passthrough().safeParse(event)
+    const result = model.safeParse(event)
 
     if (!result.success) {
       throw mapError(result.error)
