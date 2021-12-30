@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { HandlerErrorList, UnprocessableEntity } from '@lambda-func/errors'
+import { HandlerErrorIssue, UnprocessableEntity } from '@lambda-func/errors'
 
 import { zodParser } from './zod'
 
@@ -25,7 +25,7 @@ describe('zodParser', () => {
     } catch (error) {
       expect(error).toBeInstanceOf(UnprocessableEntity)
       expect((<UnprocessableEntity>error).statusCode).toBe(422)
-      expect((<UnprocessableEntity>error).errors).toStrictEqual<HandlerErrorList>([
+      expect((<UnprocessableEntity>error).issues).toStrictEqual<HandlerErrorIssue[]>([
         {
           code: 'invalid_type',
           message: 'Required',
